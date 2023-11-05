@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
+::-webkit-scrollbar {
+    display: none;
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    margin: 0px auto;
+    background: #000000ef;
+    min-height: 300vh;
+    max-width: 1545px;
+    flex: none;
+}
+.navbar {
+    background: black;
+    position: fixed;
+    max-width: 1545px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 25px 30px;
+    z-index: 100;
+}
+.navbar .logo {
+    position: relative;
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 0.7500em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    transition: 0.6s;
+    font-weight: 500;
+}
+.navbar ul{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li {
+    position: relative;
+    list-style-type: none;
+}
+.navbar ul li a {
+    position: relative;
+    text-decoration: none;
+    margin: 0 16px;
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 0.7500em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-weight: 500;
+}
+.go_up{
+    top: 90%;
+    left: 90%;
+    position: absolute;
+    height: 40px; width: 40px;
+    background: url(img/icon.png) no-repeat center center / contain;
+    position: fixed;
+    border-radius: 4px;
+    z-index: 100;
+}
+.bg_01 {
+    position: relative;
+    width: 100%;
+    max-width: 1545px;
+    height: 70vh;
+    max-height: 550px;
+    background-size: 100%;
+    background:linear-gradient(rgba(177, 177, 177, 0),rgba(0, 0, 0, 0)), url(img/Group\ 2.png) no-repeat center center / cover;
+    
+}
+.scene_01 {
+    float: RIGHT;
+    color: rgba(255, 255, 255, 0.938);
+}
+.scene_01 #main {
+    font-weight: 500;
+    transition: 0.6s;
+}
+.scene_01 #main a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 0.6em;
+    writing-mode: vertical-lr;
+ text-orientation: upright;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.scene_01 #one {
+    font-size: 3em;
+    transition: 0.6s;
+}
+.scene_01 #two {
+    font-size: 1.4em;
+    transition: 0.6s;
+    width: 100%;
+    padding-bottom: 140px;
+}
+.container{
+    border-top: 1px solid rgb(65, 65, 65);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    top:max(503px, 50.7%);
+    max-height: 61em;
+    position: absolute;
+    transition: 0.6s;
+    max-width: 1545px;
+    width: 100%;
+}
+.card_items{
+    flex: 0 0 auto;
+    object-fit: scale;
+    padding-top: 2.4%;
+    width: 100%;
+    max-width: 1545px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 auto;
+    object-fit: scale-down;
+    border: solid 2px gray;
+    border-radius: 10px;
+    height: 39em;
+    width: 23.9em;
+    padding-top: 1%;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: 0.8s ease-in-out;
+    position: relative;
+    cursor: pointer;
+}
+@media (max-width: 360px){
+    .card{
+        height: 39rem;
+        display:inline-block;
+        width:100%!important;
+    }
+
+}
+.card1{
+    background: url(img/character_take01_B&W.png) no-repeat center center / cover;
+}
+.card2{
+    background: url(img/house1_photo_B&W2.png) no-repeat center center / cover;
+}
+.card3{
+    background: url(img/modern_011.png) no-repeat 0% center / cover;
+}
+.card4{
+    background: url(img/gameboy_photo_de.png) no-repeat center center / cover;
+}
+.card1:hover{
+    background: url(img/character_take01.png) no-repeat center center / cover; 
+}
+.card2:hover{
+    background: url(img/house1_photo.png) no-repeat center center / cover;
+}
+.card3:hover{
+    background: url(img/modern_02.png) no-repeat 0% top / cover;
+}
+.card4:hover{
+    background: url(img/gameboy_photo1.png) no-repeat center center / cover;
+}
+.card img {
+    width: 100%;
+    position:absolute
+}
+.card_items a {
+    display: inline-block;
+}
+.icon-title {
+    color: rgba(255, 255, 255, 0.733);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.7em;
+    font-weight: 500;
+}
+#About-section{
+    border-top: solid 2px gray;
+    top: 170%;
+    left: 20%;
+    position: absolute;
+}
+.About-section div{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#about{
+    padding-top: 1.5em;
+    float: left;
+    color: white;
+}
+#context{
+    padding-top: 1.5em;
+    color: white;
+    padding-left: 30%;
+}
+#aabout {
+    top: 156%;
+    position: absolute;
+    height: 20%; width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+ss {
+    top: 200%;
+    position: absolute;
+    height: 20%; width: 100%;
+    background-color: rgba(255, 255, 255, 0.822);
+}
+
+.wrapper {
+    top: 200%;
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.marquee {
+
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 11s linear infinite;
+}
+
+.marquee h1 {
+    font-size: 10em;
+    color: rgba(255, 255, 255, 0.842);
+    display: inline-block;
+    letter-spacing: 30px;
+}
+
+@keyframes marquee {
+    0% {
+    transform: translate3d(0, 0, 0);
+    }
+    100% {
+    transform: translate3d(-50%, 0, 0);
+    }
+}

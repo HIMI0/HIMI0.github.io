@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio_style.css">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
+    body {
+    height: 300vh;
+    min-height: 300vh;
+    max-width: 1545px;
+    width: 100%;
+    background: #000000d2;
+}
+    
+.tab-in{
+ position: absolute;
+top: 20%;
+width: 1545px; 
+height: 80vh;
+}
+input[name=radio-m]{
+display: none;
+}
+.slide{
+            
+top: 12%;
+position: relative;
+max-width: 1545px; 
+height: 70vh;
+width: 100%;
+overflow: hidden;
+}
+.slide-in{
+            
+display: flex;
+flex-direction: row;
+max-width: 1545px;
+width: 100%;
+font-size: 0;
+position: absolute;
+left: 0; top: 0;
+transition: 0.6s;
+}
+.btn{
+position: absolute;
+bottom: 3%;
+text-align: center;
+display: flex;
+justify-content: center;
+width: 1545px;
+ margin-top: -40px;
+}
+.btn label{
+width: 13px; height: 13px;
+display: inline-block;
+border-radius: 50%;
+border: 2px solid rgba(255, 255, 255, 0.612);
+cursor: pointer;
+transition: 1s;
+}
+.btn label:not(:last-child){
+margin-right: 30px;
+}
+.btn label:hover{
+    background: rgba(255, 255, 255, 0.612);
+}
+        
+input[id=radio1]:checked ~ .slide .slide-in {
+    left: 0;
+}
+input[id=radio2]:checked ~ .slide .slide-in {
+    left: -1400px;
+}
+input[id=radio3]:checked ~ .slide .slide-in {
+    left: -3300px;
+}
+input[id=radio4]:checked ~ .slide .slide-in {
+    left: -5200px;
+}
+input[id=radio5]:checked ~ .slide .slide-in {
+    left: -7100px;
+}
+input[id=radio6]:checked ~ .slide .slide-in {
+    left: -9090px;
+}
+input[id=radio7]:checked ~ .slide .slide-in {
+            left: -10960px;
+        }
+        input[id=radio1]:checked ~.btn label[for=radio1],
+        input[id=radio2]:checked ~.btn label[for=radio2],
+        input[id=radio3]:checked ~.btn label[for=radio3],
+        input[id=radio4]:checked ~.btn label[for=radio4],
+        input[id=radio5]:checked ~.btn label[for=radio5],
+        input[id=radio6]:checked ~.btn label[for=radio6],
+        input[id=radio7]:checked ~.btn label[for=radio7]{
+            background-color:gray;
+        }
+        .navigation-auto{
+            position: absolute;
+            display: flex;
+            width: 1545px;       
+            justify-content: center;
+            bottom: 3%;
+            
+        }
+        .navigation-auto div{
+            border: 2px solid rgba(255, 255, 255, 0.612);
+            padding: 5px;
+            border-radius: 10px;
+            transition: 1s; 
+        }
+        .navigation-auto div:not(:last-child){
+            margin-right: 30px;
+        }
+        #radio1:checked ~ .navigation-auto .auto-btn1{
+            background-color:gray;
+        }
+        #radio2:checked ~ .navigation-auto .auto-btn2{
+            background-color:gray;
+        }
+        #radio3:checked ~ .navigation-auto .auto-btn3{
+            background-color:gray;
+        }
+        #radio4:checked ~ .navigation-auto .auto-btn4{
+            background-color:gray;
+        }
+        #radio5:checked ~ .navigation-auto .auto-btn5{
+            background-color:gray;
+        }
+        #radio6:checked ~ .navigation-auto .auto-btn6{
+            background-color:gray;
+        }
+        #radio7:checked ~ .navigation-auto .auto-btn7{
+            background-color:gray;
+        }
+        .card_chara{
+        flex: 0 0 auto;
+        flex-grow:1;
+        object-fit: scale-down;
+        border: solid 2px rgb(0, 0, 0);
+        background-color: black;
+        border-radius:px;
+        height: 39em;
+        width: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+        position: relative;
+        }
+    .card_chara img{
+        display: block;
+        width: 100%;
+    }
+    .container_chara{
+    padding-top: 10%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 200em;
+    height: 100%;
+    transition: 0.6s;
+    max-width: 1545px;
+    width: 100%;
+    position: relative;
+    }
+    .card_items_chara{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    padding-top: 2.4%;
+    width: 100%;
+    max-width: 1545px;
+    max-height: 300px;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .card_other:first-child{
+        width: 100%;
+    }
+    .chara01{
+        background: url(img/character_mesh1.png) no-repeat center 10% / cover;
+    }
+    .chara02{
+        background: url(img/character_wire.png) no-repeat center 75% / cover;
+    }
+    .chara03{
+        background: url(img/character_wire2.png) no-repeat center center / cover;
+    }
+    .chara04{
+        background: url(img/character_wire3.png) no-repeat center center / cover;
+    }
+    .chara05{
+        background: url(img/character_mesk.png) no-repeat center center / cover;
+    }
+    </style>
+</head>
+<body>
+    <div class= "navbar">
+        <p class="logo">Han_So_Mee</p>
+        <p class="logo">himio6543@gmail.com</p>
+        <ul>
+            <li><a href="portfolio.html">HOME</a></li>
+            <li><a href="portfolio.html#aabout">About</a></li>
+            <li><a href="#">UP</a></li>
+        </ul>
+    </div>
+    <a href="#"><div class="go_up"></div></a>
+    <div id="box"></div>
+    <div class="tab-in">
+        <input type="radio" name="radio-m" id="radio1" checked>
+        <input type="radio" name="radio-m" id="radio2">
+        <input type="radio" name="radio-m" id="radio3">
+        <input type="radio" name="radio-m" id="radio4">
+        <input type="radio" name="radio-m" id="radio5">
+        <input type="radio" name="radio-m" id="radio6">
+        <input type="radio" name="radio-m" id="radio7">
+        <div class="slide">
+            <div class="slide-in">
+                <img id="s1"src="img/character_take01.png">
+                <img src="img/character_take02.png">
+                <img src="img/character_take03.png">
+                <img src="img/character_take04.png">
+                <img src="img/character_take05.png">
+                <img src="img/character_take06.png">
+                <img src="img/character_take07.png">
+            </div>
+        </div>
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+            <div class="auto-btn6"></div>
+            <div class="auto-btn7"></div>
+        </div>
+        <div class="btn">
+            <label for="radio1"></label>
+            <label for="radio2"></label>
+            <label for="radio3"></label>
+            <label for="radio4"></label>
+            <label for="radio5"></label>
+            <label for="radio6"></label>
+            <label for="radio7"></label>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var counter = 2;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 7){
+                counter = 1;
+            }
+        }, 3000);
+    </script>
+    <div class="container_chara">
+        <div class="card_items_chara">
+            <div class="card_chara  chara01"></div>
+            <div class="card_chara  chara05"></div>
+            <div class="card_chara  chara03"></div>
+            <div class="card_chara  chara04"></div>
+            
+            <div class="card_chara  chara02"></div>
+            <div class="card_chara  cha"></div>
+        </div>
+    </div>
+</body>
+</html>

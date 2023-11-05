@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio_style.css">
+    <title>Document</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
+    
+    body {
+    background: #000000d2;
+    min-height: 300vh;
+    max-width: 1545px;
+    }
+    .card_other{
+    flex: 0 0 auto;
+    flex-grow:1;
+    object-fit: scale-down;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: black;
+    border-radius:px;
+    height: 39em;
+    width: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    }
+    .card_other img{
+        display: block;
+        width: 100%;
+    }
+    .container_other{
+    padding-top: 10%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 200em;
+    height: 100%;
+    transition: 0.6s;
+    max-width: 1545px;
+    width: 100%;
+    position: relative;
+    }
+    .card_items_other{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    padding-top: 2.4%;
+    width: 100%;
+    max-width: 1545px;
+    max-height: 300px;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .card_other:first-child{
+        width: 100%;
+    }
+    .other01{
+        background: url(img/gameboy_photo.png) no-repeat center center / cover;
+    }
+    .other02{
+        background: url(img/cup.png) no-repeat center 75% / cover;
+    }
+    .other03{
+        background: url(img/simple_01.png) no-repeat center center / cover;
+    }
+    .other04{
+        background: url(img/sword.png) no-repeat 30% center / cover;
+    }
+    .other05{
+        background: url(img/lamp4.png) no-repeat center center / cover;
+    }
+    </style>
+</head>
+<body>
+    <div class= "navbar">
+        <p class="logo">Han_So_Mee</p>
+        <p class="logo">himio6543@gmail.com</p>
+        <ul>
+            <li><a href="portfolio.html">HOME</a></li>
+            <li><a href="portfolio.html#aabout">About</a></li>
+            <li><a href="#">UP</a></li>
+        </ul>
+    </div>
+    <a href="#"><div class="go_up"></div></a>
+    <div id="darkgraybg"></div>
+    <div class="container_other">
+        <div class="card_items_other">
+            <div class="card_other  other01"></div>
+            <div class="card_other  other02"></div>
+            <div class="card_other  other03"></div>
+            <div class="card_other  other04"></div>
+            <div class="card_other  other05"></div>
+            <div class="card_other  other06"></div>
+        </div>
+    </div>
+</body>
+</html>
