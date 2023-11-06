@@ -141,7 +141,7 @@ body {
     padding-top: 1%;
     box-sizing: border-box;
     display: inline-block;
-    transition: 0.8s ease-in-out;
+    transition: 0.8s ease;
     position: relative;
     cursor: pointer;
 }
