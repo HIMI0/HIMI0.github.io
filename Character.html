@@ -17,8 +17,8 @@
 }
     
 .tab-in{
- position: absolute;
-top: 20%;
+position: absolute;
+top: 5%;
 width: 1545px; 
 height: 80vh;
 }
@@ -26,16 +26,16 @@ input[name=radio-m]{
 display: none;
 }
 .slide{
-            
-top: 12%;
+
+top: 23%;
 position: relative;
 max-width: 1545px; 
-height: 70vh;
+height: 90vh;
 width: 100%;
 overflow: hidden;
 }
 .slide-in{
-            
+
 display: flex;
 flex-direction: row;
 max-width: 1545px;
@@ -52,7 +52,8 @@ text-align: center;
 display: flex;
 justify-content: center;
 width: 1545px;
- margin-top: -40px;
+margin-top: -40px;
+top: 135%;
 }
 .btn label{
 width: 13px; height: 13px;
@@ -61,6 +62,7 @@ border-radius: 50%;
 border: 2px solid rgba(255, 255, 255, 0.612);
 cursor: pointer;
 transition: 1s;
+z-index: 10000000;
 }
 .btn label:not(:last-child){
 margin-right: 30px;
@@ -104,6 +106,7 @@ input[id=radio7]:checked ~ .slide .slide-in {
             display: flex;
             width: 1545px;       
             justify-content: center;
+            top: 128.5%;
             bottom: 3%;
             
         }
@@ -114,7 +117,7 @@ input[id=radio7]:checked ~ .slide .slide-in {
             transition: 1s; 
         }
         .navigation-auto div:not(:last-child){
-            margin-right: 30px;
+            margin-right: 29.01px;
         }
         #radio1:checked ~ .navigation-auto .auto-btn1{
             background-color:gray;
