@@ -117,17 +117,18 @@ body {
     position: absolute;
     transition: 0.6s;
     max-width: 1545px;
-    width: 100%;
+    width: 100%
 }
 .card_items{
+    
     flex: 0 0 auto;
-    object-fit: scale;
-    padding-top: 2.4%;
+    padding-top: 3.5%;
     width: 100%;
     max-width: 1545px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .card {
@@ -144,14 +145,7 @@ body {
     position: relative;
     cursor: pointer;
 }
-@media (max-width: 360px){
-    .card{
-        height: 39rem;
-        display:inline-block;
-        width:100%!important;
-    }
 
-}
 .card1{
     background: url(img/character_take01_B&W.png) no-repeat center center / cover;
 }
@@ -195,6 +189,7 @@ body {
     border-top: solid 2px gray;
     top: 170%;
     left: 20%;
+    width: 1300px;
     position: absolute;
 }
 .About-section div{
@@ -218,13 +213,6 @@ body {
     position: absolute;
     height: 20%; width: 100%;
     background-color: rgba(255, 255, 255, 0);
-}
-
-ss {
-    top: 200%;
-    position: absolute;
-    height: 20%; width: 100%;
-    background-color: rgba(255, 255, 255, 0.822);
 }
 
 .wrapper {
