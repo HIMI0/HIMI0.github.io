@@ -150,25 +150,25 @@ body {
     background: url(img/character_take01_B&W.png) no-repeat center center / cover;
 }
 .card2{
-    background: url(img/house1_photo_B&W2.png) no-repeat center center / cover;
+    background: url(img/house1_photo_B&W2.jpg) no-repeat center center / cover;
 }
 .card3{
-    background: url(img/modern_011.png) no-repeat 0% center / cover;
+    background: url(img/modern_011.jpg) no-repeat 0% center / cover;
 }
 .card4{
-    background: url(img/gameboy_photo_de.png) no-repeat center center / cover;
+    background: url(img/gameboy_photo_de.jpg) no-repeat center center / cover;
 }
 .card1:hover{
-    background: url(img/character_take01.png) no-repeat center center / cover; 
+    background: url(img/character_take01.jpg) no-repeat center center / cover; 
 }
 .card2:hover{
-    background: url(img/house1_photo.png) no-repeat center center / cover;
+    background: url(img/house1_photo.jpg) no-repeat center center / cover;
 }
 .card3:hover{
-    background: url(img/modern_02.png) no-repeat 0% top / cover;
+    background: url(img/modern_02.jpg) no-repeat 0% top / cover;
 }
 .card4:hover{
-    background: url(img/gameboy_photo1.png) no-repeat center center / cover;
+    background: url(img/gameboy_photo1.jpg) no-repeat center center / cover;
 }
 .card img {
     width: 100%;
