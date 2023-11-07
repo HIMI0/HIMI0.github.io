@@ -18,17 +18,17 @@
     
 .tab-in{
 position: absolute;
-top: 5%;
+top: 50%;
+width: 100%;
 width: 1545px; 
-height: 80vh;
+height: 90vh;
 }
 input[name=radio-m]{
 display: none;
 }
 .slide{
 
-top: 23%;
-position: relative;
+position: absolute;
 max-width: 1545px; 
 height: 90vh;
 width: 100%;
@@ -42,6 +42,7 @@ max-width: 1545px;
 width: 100%;
 font-size: 0;
 position: absolute;
+align-items: center;
 left: 0; top: 0;
 transition: 0.6s;
 }
@@ -52,8 +53,6 @@ text-align: center;
 display: flex;
 justify-content: center;
 width: 1545px;
-margin-top: -40px;
-top: 135%;
 }
 .btn label{
 width: 13px; height: 13px;
@@ -62,7 +61,7 @@ border-radius: 50%;
 border: 2px solid rgba(255, 255, 255, 0.612);
 cursor: pointer;
 transition: 1s;
-z-index: 10000000;
+z-index: 10000;
 }
 .btn label:not(:last-child){
 margin-right: 30px;
@@ -72,25 +71,25 @@ margin-right: 30px;
 }
         
 input[id=radio1]:checked ~ .slide .slide-in {
-    left: 0;
+    left: -178px;
 }
 input[id=radio2]:checked ~ .slide .slide-in {
-    left: -1400px;
+    left: -2100px;
 }
 input[id=radio3]:checked ~ .slide .slide-in {
-    left: -3300px;
+    left: -4000px;
 }
 input[id=radio4]:checked ~ .slide .slide-in {
-    left: -5200px;
+    left: -5900px;
 }
 input[id=radio5]:checked ~ .slide .slide-in {
-    left: -7100px;
+    left: -7800px;
 }
 input[id=radio6]:checked ~ .slide .slide-in {
-    left: -9090px;
+    left: -9750px;
 }
 input[id=radio7]:checked ~ .slide .slide-in {
-            left: -10960px;
+            left: -11670px;
         }
         input[id=radio1]:checked ~.btn label[for=radio1],
         input[id=radio2]:checked ~.btn label[for=radio2],
@@ -106,8 +105,8 @@ input[id=radio7]:checked ~ .slide .slide-in {
             display: flex;
             width: 1545px;       
             justify-content: center;
-            top: 128.5%;
             bottom: 3%;
+            display: none;
             
         }
         .navigation-auto div{
@@ -117,7 +116,7 @@ input[id=radio7]:checked ~ .slide .slide-in {
             transition: 1s; 
         }
         .navigation-auto div:not(:last-child){
-            margin-right: 29.01px;
+            margin-right: 30px;
         }
         #radio1:checked ~ .navigation-auto .auto-btn1{
             background-color:gray;
@@ -146,7 +145,6 @@ input[id=radio7]:checked ~ .slide .slide-in {
         object-fit: scale-down;
         border: solid 2px rgb(0, 0, 0);
         background-color: black;
-        border-radius:px;
         height: 39em;
         width: 50%;
         box-sizing: border-box;
