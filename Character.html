@@ -9,86 +9,90 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
     body {
-    height: 300vh;
-    min-height: 300vh;
+    
+    min-height: 800vh;
     max-width: 1545px;
     width: 100%;
-    background: #000000d2;
+    background: #000000;
 }
-    
-.tab-in{
-position: absolute;
-top: 50%;
-width: 100%;
-width: 1545px; 
-height: 90vh;
-}
-input[name=radio-m]{
-display: none;
-}
-.slide{
+/* slide picture */
+    .tab-in{
 
-position: absolute;
-max-width: 1545px; 
-height: 90vh;
-width: 100%;
-overflow: hidden;
-}
-.slide-in{
+    position: absolute;
+    box-sizing: border-box;
+    top: 30%;
+    width: 100%;
+    width: 1545px; 
+    height: 90vh;
+    }
+    input[name=radio-m]{
+    display: none;
+    }
+    .slide{
+    position: absolute;
+    max-width: 1545px; 
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    border: solid 2px gray;
+    }
+    .slide-in{
 
-display: flex;
-flex-direction: row;
-max-width: 1545px;
-width: 100%;
-font-size: 0;
-position: absolute;
-align-items: center;
-left: 0; top: 0;
-transition: 0.6s;
-}
-.btn{
-position: absolute;
-bottom: 3%;
-text-align: center;
-display: flex;
-justify-content: center;
-width: 1545px;
-}
-.btn label{
-width: 13px; height: 13px;
-display: inline-block;
-border-radius: 50%;
-border: 2px solid rgba(255, 255, 255, 0.612);
-cursor: pointer;
-transition: 1s;
-z-index: 10000;
-}
-.btn label:not(:last-child){
-margin-right: 30px;
-}
-.btn label:hover{
+    display: flex;
+    flex-direction: row;
+    max-width: 1545px;
+    width: 100%;
+    font-size: 0;
+    position: absolute;
+    align-items: center;
+    left: 0; top: 0;
+    transition: 0.6s;
+    }
+    .btn{
+
+    position: absolute;
+    bottom: 3%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 1545px;
+
+    }
+    .btn label{
+    width: 13px; height: 13px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.612);
+    cursor: pointer;
+    transition: 1s;
+    z-index: 10000000;
+    }
+    .btn label:not(:last-child){
+    margin-right: 30px;
+    }
+    .btn label:hover{
     background: rgba(255, 255, 255, 0.612);
-}
+    }
         
-input[id=radio1]:checked ~ .slide .slide-in {
+    input[id=radio1]:checked ~ .slide .slide-in {
     left: -178px;
-}
-input[id=radio2]:checked ~ .slide .slide-in {
+    }
+    input[id=radio2]:checked ~ .slide .slide-in {
     left: -2100px;
-}
-input[id=radio3]:checked ~ .slide .slide-in {
+    }
+    input[id=radio3]:checked ~ .slide .slide-in {
     left: -4000px;
-}
-input[id=radio4]:checked ~ .slide .slide-in {
+    }
+    input[id=radio4]:checked ~ .slide .slide-in {
     left: -5900px;
-}
-input[id=radio5]:checked ~ .slide .slide-in {
+    }
+    input[id=radio5]:checked ~ .slide .slide-in {
     left: -7800px;
-}
-input[id=radio6]:checked ~ .slide .slide-in {
+    }
+    input[id=radio6]:checked ~ .slide .slide-in {
     left: -9750px;
-}
-input[id=radio7]:checked ~ .slide .slide-in {
+    }
+    input[id=radio7]:checked ~ .slide .slide-in {
             left: -11670px;
         }
         input[id=radio1]:checked ~.btn label[for=radio1],
@@ -107,7 +111,6 @@ input[id=radio7]:checked ~ .slide .slide-in {
             justify-content: center;
             bottom: 3%;
             display: none;
-            
         }
         .navigation-auto div{
             border: 2px solid rgba(255, 255, 255, 0.612);
@@ -139,51 +142,55 @@ input[id=radio7]:checked ~ .slide .slide-in {
         #radio7:checked ~ .navigation-auto .auto-btn7{
             background-color:gray;
         }
-        .card_chara{
+/* end slide picture */
+/* temporary card */
+    .card_chara{
         flex: 0 0 auto;
         flex-grow:1;
         object-fit: scale-down;
         border: solid 2px rgb(0, 0, 0);
         background-color: black;
+        border-radius:px;
         height: 39em;
         width: 50%;
         box-sizing: border-box;
         display: inline-block;
         position: relative;
-        }
+    }
     .card_chara img{
+        
         display: block;
         width: 100%;
+        
     }
     .container_chara{
-    padding-top: 10%;
+    border:solid 2px blue;
+    top: 500vh;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 200em;
-    height: 100%;
+    max-height: 100em;
     transition: 0.6s;
     max-width: 1545px;
     width: 100%;
     position: relative;
     }
     .card_items_chara{
+    border: solid 3px green;
     display: flex;
     flex-wrap: wrap;
+    top: 300vh; left: 50%; translate: (-50% -50%);
     flex: 0 0 auto;
-    padding-top: 2.4%;
     width: 100%;
     max-width: 1545px;
-    max-height: 300px;
+    max-height: 100em;
     align-items: center;
     justify-content: space-between;
     }
     .card_other:first-child{
         width: 100%;
     }
-    .chara01{
-        background: url(img/character_mesh1.jpg) no-repeat center 10% / cover;
-    }
+    
     .chara02{
         background: url(img/character_wire.jpg) no-repeat center 75% / cover;
     }
@@ -193,9 +200,8 @@ input[id=radio7]:checked ~ .slide .slide-in {
     .chara04{
         background: url(img/character_wire3.jpg) no-repeat center center / cover;
     }
-    .chara05{
-        background: url(img/character_mesk.jpg) no-repeat center center / cover;
-    }
+/* end temporary card */
+/* wrapper*/
     .wrapper {
     top: 2%;
     position: absolute;
@@ -203,19 +209,23 @@ input[id=radio7]:checked ~ .slide .slide-in {
     width: 100%;
     overflow: hidden;
     }
+
     .marquee {
     background-color: rgb(41, 41, 41);
+    border-bottom: solid 1px rgb(103, 103, 103);
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    animation: marquee 40s linear infinite;
+    animation: marquee 200s linear infinite;
     }
+
     .marquee h1 {
     font-size: 10em;
-    color: rgba(255, 255, 255, 0.664);
+    color: rgba(255, 255, 255, 0.851);
     display: inline-block;
     letter-spacing: 30px;
     }
+
     @keyframes marquee {
     0% {
     transform: translate3d(0, 0, 0);
@@ -224,6 +234,99 @@ input[id=radio7]:checked ~ .slide .slide-in {
     transform: translate3d(-50%, 0, 0);
     }
     }
+/* endwrapper*/
+/* about character section*/
+    #Aboutch-section{
+    border-top: solid 2px gray;
+    top: 150%;
+    left: 30%;
+    width: 100%;
+    position: absolute;
+    }
+    .Aboutch-section div{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .img-section_about{
+    top: 200vh;
+    height: 100vh;
+    max-width: 1545px;
+    width: 100%;
+    position: absolute;
+    border: solid 3px red;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    background-color: rgba(255, 255, 255, 0.311);
+    }
+    .meshimg{
+    border: solid 2px green;   
+    }
+    .aboutch-items{
+    border: solid 3px white;
+    display: grid;
+    padding: 10px;
+    width: 1545px;
+    box-sizing: border-box;
+    }
+    #charactermesh{
+    border: solid 2px gold;
+    font-size: 3em;
+    letter-spacing: 10px;
+    font-weight: 800;
+    word-break: break-all;
+    word-wrap: break-word;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+
+    }
+    #title{
+    border: solid 2px violet;
+    word-break: break-word;
+    letter-spacing: 17px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.881);
+    font-size: 8em;
+    grid-column: 5;
+    grid-row: 1/ span 2;
+    font-family: "Montserrat";
+    }
+    .mesh{
+    width: 100%; height: 100%; object-fit: cover;   
+    border-right: solid 8px rgb(123, 123, 123);
+    float: left;
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;
+    }
+    .mesh2{
+    width: 100%; height: 100%; object-fit: contain;
+    background-color: rgba(50, 50, 50, 0.732);
+    float: left;
+    grid-column: 3;
+    grid-row: 3 / span 2;
+    }
+    .img-section_about p{
+    border: solid 2px blue;
+    grid-column: 5;
+    grid-row: 3 / span 2;
+    }
+    #aboutmesh{
+    border: solid 2px skyblue;
+    grid-column: 1 / span 2;
+    grid-row: 5 /span 3;
+    }
+    #aboutmesh2{
+    border: solid 2px brown;
+    grid-column: 3 / span 3;
+    grid-row: 5 / span 3;;
+    }
+/* end character section*/
+
     </style>
 </head>
 <body>
@@ -236,7 +339,6 @@ input[id=radio7]:checked ~ .slide .slide-in {
             <li><a href="#">UP</a></li>
         </ul>
     </div>
-    <a href="#"><div class="go_up"></div></a>
     <div class="wrapper">
         <div class="marquee">
         <h1>
@@ -244,6 +346,7 @@ input[id=radio7]:checked ~ .slide .slide-in {
         </h1>
         </div>
     </div>
+    <a href="#"><div class="go_up"></div></a>
     <div id="box"></div>
     <div class="tab-in">
         <input type="radio" name="radio-m" id="radio1" checked>
@@ -255,7 +358,7 @@ input[id=radio7]:checked ~ .slide .slide-in {
         <input type="radio" name="radio-m" id="radio7">
         <div class="slide">
             <div class="slide-in">
-                <img id="s1"src="img/character_take01.jpg">
+                <img id="s1"src="img/character_take01_1.jpg">
                 <img src="img/character_take02.jpg">
                 <img src="img/character_take03.jpg">
                 <img src="img/character_take04.jpg">
@@ -293,16 +396,29 @@ input[id=radio7]:checked ~ .slide .slide-in {
             }
         }, 3000);
     </script>
+    <div id="Aboutch-section">
+        <p id="about">About</p>
+        <!-- <p id="context">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+    <div class="img-section_about">
+        <div class="aboutch-items">
+        <p id="title">Mesh</p>
+        <p id="aboutmesh">Mesh</p>
+        <p id="aboutmesh2">Mesh</p>
+        <p id="charactermesh">SCULPTING CHARACTER</p>
+        <img src="img/character_mesk.jpg" class="meshimg mesh">
+        <img src="img/character_mesh1.jpg" class="meshimg mesh2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum sint ipsa magnam, ducimus nam fugiat at alias dolor, delectus rerum vitae deserunt explicabo quisquam quae quibusdam neque qui cumque animi?</p>
+        </div>
+    </div>
     <div class="container_chara">
         <div class="card_items_chara">
-            <div class="card_chara  chara01"></div>
-            <div class="card_chara  chara05"></div>
+            
             <div class="card_chara  chara03"></div>
             <div class="card_chara  chara04"></div>
-            
             <div class="card_chara  chara02"></div>
             <div class="card_chara  cha"></div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
