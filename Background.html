@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio_style.css">
+    <script defer src="runafterhtml.js"></script>
     <title>Document</title>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
@@ -13,6 +14,31 @@
     min-height: 300vh;
     max-width: 1545px;
     }
+    .navbar {
+    background: rgba(216, 216, 216, 0.936);
+    z-index: 101;
+}
+.navbar .logo{
+    color: rgba(0, 0, 0, 0.808);
+    z-index: 101;
+}
+.navbar ul li a{
+    color: rgba(0, 0, 0, 0.808);
+    z-index: 101;
+}
+.navbar ul li a:hover{
+    background-color: rgb(44, 44, 44);
+    color: rgb(234, 234, 234);
+    z-index: 101;
+}
+.navbar span{
+    background-color: rgba(0, 0, 0, 0.936);
+    z-index: 101;
+}
+.navbar span img{
+    z-index: 101;
+    filter: brightness(0) invert(1);
+}
     .card_bg{
     flex: 0 0 auto;
     flex-grow:1;
@@ -73,17 +99,44 @@
     .bg05{
         background: url(img/modern_06.jpg) no-repeat center center / cover;
     }
+    .About-background{
+        background-color: black;
+        display: flex;
+        width: 100%;
+        padding-left: 30%;
+    }
+    .aboutbox{
+        margin-top: 5%;
+        border-top: solid 1px gray;
+        width: 100%;
+        
+    }
+    .about{
+    padding-top: 1.5em;
+    float: left;
+    color:rgb(239, 239, 239);
+    }
+    .context{
+    padding-top: 1.5em;
+    color:rgb(239, 239, 239);
+    padding-left: 30%;
+    word-spacing: -0.3em;
+        letter-spacing: 0.07em;
+    }
+    .context span{
+        color:rgb(173, 173, 173);
+    }
     </style>
 </head>
 <body>
     <div class= "navbar">
-        <p class="logo">Han_So_Mee</p>
-        <p class="logo">himio6543@gmail.com</p>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html#aabout">About</a></li>
-            <li><a href="#">UP</a></li>
-        </ul>
+        <p class="logo">HS</p>
+    <ul>
+        <li id="Home"><a href="index.html">MAIN</a></li>
+        <li id="Contact"><a href="#">PROJECT</a></li>
+        <li id="About"><a href="index.html#aabout">ABOUT</a></li>
+    </ul>
+    <span><img src="img/menu-icon4.png" height="40px" ></span>
     </div>
     <a href="#"><div class="go_up"></div></a>
     <div class="container_bg">
@@ -93,7 +146,14 @@
             <div class="card_bg  bg03"></div>
             <div class="card_bg  bg04"></div>
             <div class="card_bg  bg05"></div>
-            <div class="card_bg  bg06"></div>
+            <div class="card_bg About-background">
+                <div class="hidden aboutbox">
+                    <p class="about">About</p>
+                    <p class="context"> 클래스 101 동영상에 모디파이어와 특이한 유리 색을 배워서 색깔을 실험해 보았습니다.
+                        <br><br><br>
+                           <span> 블렌더 싸이클로 렌더링한 사진입니다.</span>
+                </div>
+            </div>
         </div>
     </div>
 </body>
