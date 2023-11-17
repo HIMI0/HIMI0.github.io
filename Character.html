@@ -4,52 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio_style.css">
+    <script defer src="runafterhtml.js"></script>
     <title>Document</title>
-</head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
     body {
-    
-    min-height: 800vh;
+    margin: 0 auto;
+    min-height: 500vh;
     max-width: 1545px;
-    width: 100%;
     background: #000000;
+    display: flex;
+    align-items: center; justify-content: center;
 }
+.navbar {
+    background: rgba(216, 216, 216, 0.936);
+    z-index: 101;
+}
+.navbar .logo{
+    color: rgba(0, 0, 0, 0.808);
+    z-index: 101;
+}
+.navbar ul li a{
+    color: rgba(0, 0, 0, 0.808);
+    z-index: 101;
+}
+.navbar ul li a:hover{
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    z-index: 101;
+}
+.navbar span{
+    background-color: rgba(0, 0, 0, 0.936);
+    z-index: 101;
+}
+.navbar span img{
+    z-index: 101;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
 /* slide picture */
     .tab-in{
+    border: solid 2px rgb(60, 60, 60);
     position: absolute;
-    box-sizing: border-box;
-    top: 30%;
-    width: 100%;
-    width: 1545px; 
-    height: 90vh;
-    margin-left: auto; margin-right: auto;
+    top: 35%;
+    width: 90%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
     input[name=radio-m]{
     display: none;
     }
-    .slide{
+    .tab-in .slide{
+    left: 14%;
+    box-sizing: border-box;
     position: absolute;
     max-width: 1545px; 
-    height: 90vh;
+    height: 100%;
     width: 100%;
-    overflow: hidden;
-    border: solid 2px gray;
-    }
-    .slide-in{
-
+    /* border: solid 2px rgb(68, 68, 68); */
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    }
+    .tab-in .slide .slide-in{
+     
+        box-sizing: border-box;
+    display: flex;
     max-width: 1545px;
     width: 100%;
     font-size: 0;
     position: absolute;
     align-items: center;
-    left: 0; top: 0;
     transition: 0.6s;
+    object-fit: contain;
+    }
+    .tab-in .slide .slide-in img{
+        height: 100%; width: 100%;
+        object-fit: contain;
     }
     .btn{
-
     position: absolute;
     bottom: 3%;
     text-align: center;
@@ -78,22 +115,22 @@
     left: -178px;
     }
     input[id=radio2]:checked ~ .slide .slide-in {
-    left: -2100px;
+    left: -1500px;
     }
     input[id=radio3]:checked ~ .slide .slide-in {
-    left: -4000px;
+    left: -2800px;
     }
     input[id=radio4]:checked ~ .slide .slide-in {
-    left: -5900px;
+    left: -4120px;
     }
     input[id=radio5]:checked ~ .slide .slide-in {
-    left: -7800px;
+    left: -5400px;
     }
     input[id=radio6]:checked ~ .slide .slide-in {
-    left: -9750px;
+    left: -6790px;
     }
     input[id=radio7]:checked ~ .slide .slide-in {
-            left: -11670px;
+            left: -8080px;
         }
         input[id=radio1]:checked ~.btn label[for=radio1],
         input[id=radio2]:checked ~.btn label[for=radio2],
@@ -143,90 +180,31 @@
             background-color:gray;
         }
 /* end slide picture */
-/* temporary card */
-    .card_chara{
-        flex: 0 0 auto;
-        flex-grow:1;
-        object-fit: scale-down;
-        border: solid 2px rgb(0, 0, 0);
-        background-color: black;
-        border-radius:px;
-        height: 39em;
-        width: 50%;
-        box-sizing: border-box;
-        display: inline-block;
-        position: relative;
-    }
-    .card_chara img{
-        
-        display: block;
-        width: 100%;
-        
-    }
-    .container_chara{
-    border:solid 2px blue;
-    top: 500vh;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 100em;
-    transition: 0.6s;
-    max-width: 1545px;
-    width: 100%;
-    position: relative;
-    }
-    .card_items_chara{
-    border: solid 3px green;
-    display: flex;
-    flex-wrap: wrap;
-    top: 300vh; left: 50%; translate: (-50% -50%);
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 1545px;
-    max-height: 100em;
-    align-items: center;
-    justify-content: space-between;
-    }
-    .card_other:first-child{
-        width: 100%;
-    }
-    
-    .chara02{
-        background: url(img/character_wire.jpg) no-repeat center 75% / cover;
-    }
-    .chara03{
-        background: url(img/character_wire2.jpg) no-repeat center center / cover;
-    }
-    .chara04{
-        background: url(img/character_wire3.jpg) no-repeat center center / cover;
-    }
-/* end temporary card */
 /* wrapper*/
-    .wrapper {
-    top: 2%;
+    .wrapper2 {
+    top: 13%;
     position: absolute;
     max-width: 1545px;
     width: 100%;
     overflow: hidden;
     }
 
-    .marquee {
+    .marquee2 {
     background-color: rgb(41, 41, 41);
-    border-bottom: solid 1px rgb(103, 103, 103);
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
     animation: marquee 200s linear infinite;
     }
 
-    .marquee h1 {
-    font-size: 10em;
+    .marquee2 h1 {
+    font-size: 8em;
     color: rgba(255, 255, 255, 0.851);
     display: inline-block;
     letter-spacing: 30px;
     }
 
-    @keyframes marquee {
+    @keyframes marquee2 {
     0% {
     transform: translate3d(0, 0, 0);
     }
@@ -234,113 +212,171 @@
     transform: translate3d(-50%, 0, 0);
     }
     }
+
+    .wrapper {
+        top: 470vh;
+    }
+    .marquee h1{
+        color: rgb(173, 173, 173);
+    }
 /* endwrapper*/
-/* about character section*/
-    #Aboutch-section{
-    border-top: solid 2px gray;
-    top: 150%;
-    left: 30%;
-    width: 100%;
+/* about concept character section*/
+    .Aboutch-section{
+    border-top: solid 1px gray;
+    box-sizing: border-box;
+    top: 130vh;
+    margin-left: 25%;
+    width: 75%;
     position: absolute;
+    padding-top: 1.5em;
     }
     .Aboutch-section div{
-    color: white;
+    color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
     }
-    .img-section_about{
-    top: 200vh;
-    height: 100vh;
-    max-width: 1545px;
-    width: 100%;
-    position: absolute;
-    border: solid 3px red;
-    display: grid;
-    box-sizing: border-box;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    background-color: rgba(255, 255, 255, 0.311);
+    .aboutch{
+        color: white; 
+        float: left;
     }
-    .meshimg{
-    border: solid 2px green;   
-    }
-    .aboutch-items{
-    border: solid 3px white;
-    display: grid;
-    padding: 10px;
-    width: 1545px;
-    box-sizing: border-box;
-    }
-    #charactermesh{
-    border: solid 2px gold;
-    font-size: 3em;
-    letter-spacing: 10px;
-    font-weight: 800;
-    word-break: break-all;
-    word-wrap: break-word;
-    grid-column: 1 / span 4;
-    grid-row: 1;
+    .contextch{
+        color:rgb(239, 239, 239);
+        padding-left: 30%; padding-right: 5%;
+        word-spacing: -0.3em;
+        letter-spacing: 0.07em;
+        line-height: 1.6em;
 
     }
-    #title{
-    border: solid 2px violet;
-    word-break: break-word;
-    letter-spacing: 17px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: rgba(255, 255, 255, 0.881);
-    font-size: 8em;
-    grid-column: 5;
-    grid-row: 1/ span 2;
-    font-family: "Montserrat";
+/* end concept character section*/
+/* about mesh & topology section */
+    .about-ch-section{
+    margin-top: 60vh;
+    position: relative;
+    height: 100vh; width: 100%;
+    background-color: #252525;
+    box-sizing: border-box;
+    display: flex;
+
+    }
+    .meshtopology-img{
+        border-right: solid 3px rgb(255, 255, 255);
+        background-color: white;
+        height: 100%; width: 50%;
+        object-fit: contain;
+    }
+    .meshtopology-img img{
+        height: 100%; width: 90%;
+    }
+    .container-ch{
+        height: 100%; width: 50%;
+        display: flex;
+    }
+    .meshtopology-items{
+        border-left: solid 2px rgb(0, 0, 0);
     }
     .mesh{
-    width: 100%; height: 100%; object-fit: cover;   
-    border-right: solid 8px rgb(123, 123, 123);
-    float: left;
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 2;
+        margin-top: 7%;
+        padding: 10% 15% 0% 15%;
+        color: rgb(160, 160, 160);
+        word-spacing: -0.3em;
+        letter-spacing: 0.07em;
+    }
+    .mesh img{
+        float: left;
+    }
+    .title{
+        padding-top: 3%;
+        font-weight: 550;
+        color: rgb(235, 234, 234);
+        letter-spacing: 0.1em;
+    }
+    .about-ch-section2{
+        background-color:#252525;
+        position: absolute;
+        top: 335vh;
+        height: 100vh; width: 100%;
+        box-sizing: border-box;
+        display: flex;
+    }
+    .meshtopology-img2{
+        background-color: #ffffff;
+        border-left: solid 5px rgb(255, 255, 255);
+        height: 100%; width: 50%;
+        object-fit: contain;
+        
+    }
+    .meshtopology-img2 img{
+        height: 100%; width: 90%;
+        float: right;
+        border-left: solid 8px rgb(255, 255, 255);
+        
+        
     }
     .mesh2{
-    width: 100%; height: 100%; object-fit: contain;
-    background-color: rgba(50, 50, 50, 0.732);
-    float: left;
-    grid-column: 3;
-    grid-row: 3 / span 2;
+        padding: 18% 15% 0% 15%;
+        color: rgb(160, 160, 160); 
+        word-spacing: -0.3em;
+        letter-spacing: 0.07em;
     }
-    .img-section_about p{
-    border: solid 2px blue;
-    grid-column: 5;
-    grid-row: 3 / span 2;
+    .mesh2 img{
+        float: left;
     }
-    #aboutmesh{
-    border: solid 2px skyblue;
-    grid-column: 1 / span 2;
-    grid-row: 5 /span 3;
+    .iconz{
+        padding: 15% 15% 0% 17%;
+        
     }
-    #aboutmesh2{
-    border: solid 2px brown;
-    grid-column: 3 / span 3;
-    grid-row: 5 / span 3;;
+    #boxm{
+        border-bottom: solid 2px rgb(255, 255, 255);
+        width: 100%;height: 100%;
+        display: inline-block;
+        top: 0; left: 0;
     }
-/* end character section*/
-
+    .container-ch2{
+        height: 100%; width: 50%;
+        display: flex;
+    }
+    .section2bg{
+        background-image:linear-gradient(180deg, rgb(231, 231, 231),rgb(228, 228, 228));
+        top: 190vh;
+        height: 305vh; width: 100%;
+        position: absolute;
+    }
+    .mesh img, .mesh2 img{
+        -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+    }
+    .section2bg div{
+        margin: 8% 5% 0%;
+        font-size: 3em;
+        font-weight: 900;
+        color: #292929;
+        word-spacing: -0.35em;
+        letter-spacing: 0.12em;
+    }
+    .section2bg p{
+        color: #383838;
+        
+        font-size: 1em;
+        margin-left: 5%;
+    }
+    .marquee span{
+        color: black;
+    }
     </style>
 </head>
 <body>
     <div class= "navbar">
-        <p class="logo">Han_So_Mee</p>
-        <p class="logo">himio6543@gmail.com</p>
+        <p class="logo">HS</p>
         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html#aabout">About</a></li>
-            <li><a href="#">UP</a></li>
+            <li id="Home"><a href="index.html">MAIN</a></li>
+            <li id="Contact"><a href="#">PROJECT</a></li>
+            <li id="About"><a href="index.html#aabout">ABOUT</a></li>
         </ul>
+        <span><img src="img/menu-icon4.png" height="40px" ></span>
     </div>
-    <div class="wrapper">
-        <div class="marquee">
+    <div class="wrapper2">
+        <div class="marquee2">
         <h1>
             CHARACTER CHARACTER CHARACTER CHARACTER CHARACTER
         </h1>
@@ -394,31 +430,76 @@
             if(counter > 7){
                 counter = 1;
             }
-        }, 3000);
+        }, 5000);
     </script>
-    <div id="Aboutch-section">
-        <p id="about">About</p>
-        <!-- <p id="context">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    <div class="hidden Aboutch-section">
+        <p class="aboutch">About</p>
+        <p class="contextch">포스트 묵시록 시대에서 생존하는 강한 여자. 옛날 기술을 전수받아 현대 기술와 함께 활용하면서 발전해 나갑니다.<br><br><br>
+            오염과 전쟁으로 인해 지구는 멸망하였다. 사람이 살수 없는 환경이 되어 사람들은 두려움과 희망을 잃었다. 그럼에도 불구하고 인류는 끝나지 않았다. 그때, 
+            진화된 인간, 동물 그리고 물질들이 점점 생겨나면서 그들에게 새로운 시대가 시작되었다. 하지만 진화된 종들은 오염도가 높아 인간과 함께 살 수 가 없었다.
+             그렇게 그들은 흩어지면서 안전한 곳을 찾아 정착하였지만... 얼마 후 스카벤져가 나타나 그들을 탐색하면서 또 다시 악몽에 시달렸다. 한편 스카벤져로부터 
+             지키는 집단이 있었는데 이 집단에서 태어난 한 여자의 이야기가 시작된다...</p>
     </div>
-    <div class="img-section_about">
-        <div class="aboutch-items">
-        <p id="title">Mesh</p>
-        <p id="aboutmesh">Mesh</p>
-        <p id="aboutmesh2">Mesh</p>
-        <p id="charactermesh">SCULPTING CHARACTER</p>
-        <img src="img/character_mesk.jpg" class="meshimg mesh">
-        <img src="img/character_mesh1.jpg" class="meshimg mesh2">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum sint ipsa magnam, ducimus nam fugiat at alias dolor, delectus rerum vitae deserunt explicabo quisquam quae quibusdam neque qui cumque animi?</p>
+    <div class="hidden section2bg">
+        <div>캐릭터 만드는 과정 요약</div>
+            <p>&nbsp;The process of making character</p>
+        
+    </div>
+    <div class="about-ch-section">
+        <div class="meshtopology-img">
+            <img src="img/character_mesh&wire2.png" alt="">
+        </div>
+        <div class="container-ch">
+            <div class="meshtopology-items">
+                <div class="mesh icon1">
+                    <img src="img/sculpt-icon.png" alt="">
+                    <p class="title">스컬핑</p>
+                    <p class="inside">블랜더 스컬핑 툴을 활용하여 오브젝트를 몸, 팔, 다리 각 부위를 만든 뒤 합체했습니다.</p>
+                </div>
+                <div class="mesh icon2">
+                    <img src="img/retopology-icon.png" alt="">
+                    <p class="title">리토플로지</p>
+                    <p class="inside">Skin wrap 모디파이어와 함께 사용하여 폴리곤을 정리했습니다.</p>
+                </div>
+                <div class="mesh icon3">
+                    <img src="img/modification-icon.png" alt="">
+                    <p class="title">Multires 모디파이어</p>
+                    <p class="inside">정리된 토플로지를 복사하여 옷을 만든 후 Multires 모디파이어의 기능으로 스컬핑 레이어를 만들었습니다. 그 후, Multires 모디파이어를 활용해서 단축된 노말 맵을 베이킹 합니다.</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container_chara">
-        <div class="card_items_chara">
-            
-            <div class="card_chara  chara03"></div>
-            <div class="card_chara  chara04"></div>
-            <div class="card_chara  chara02"></div>
-            <div class="card_chara  cha"></div>
+    <div class="about-ch-section2">
+        <div class="container-ch2">
+            <div class="meshtopology-items">
+                <div class="mesh2 iconz">
+               
+                    <p class="title">텍스처 및 색깔</p>
+                    <p class="inside">블랜더의 머티리얼 셰이더 에디터와 텍스쳐 페인팅의 기능으로 텍스처를 만들었습니다.</p>
+                    <div id="boxm"></div>
+                </div>
+                <div class="mesh2 icon2">
+                    <img src="img/paint-icon.png" alt="">
+                    <p class="title">텍스처 페인팅</p>
+                    <p class="inside">텍스쳐 페인팅으로 피부의 베이스 컬러, 거칠기 맵, 그리고 서브 표면 컬러 맵을 만들어 프린시플드 BSDF에 연결했습니다.</p>
+                </div>
+                <div class="mesh2 icon3">
+                    <img src="img/node-icon.png" alt="">
+                    <p class="title">노드</p>
+                    <p class="inside">텍스처 노드, 벡터 노드, 색상 노드, 조합 셰이더 활용하여 피부, 옷, 장신구, 흙, 먼지 등등 텍스처를 표현했습니다.</p>
+                </div>
+            </div>
         </div>
-    </div> -->
+        <div class="meshtopology-img2">
+            <img src="img/about-texture.png" alt="">
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="marquee">
+        <h1>
+            <span>PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT</span>
+        </h1>
+        </div>
+    </div>
 </body>
 </html>

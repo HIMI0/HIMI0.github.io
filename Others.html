@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio_style.css">
+    <script defer src="runafterhtml.js"></script>
     <title>Document</title>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
@@ -19,7 +20,6 @@
     object-fit: scale-down;
     border: solid 2px rgb(0, 0, 0);
     background-color: black;
-    border-radius:px;
     height: 39em;
     width: 50%;
     box-sizing: border-box;
@@ -71,17 +71,44 @@
     .other05{
         background: url(img/lamp4.jpg) no-repeat center center / cover;
     }
+    .about{
+        padding-top: 1.5em;
+        float: left;
+        color:rgb(239, 239, 239);
+    }
+    .context{
+        padding-top: 1.5em;
+        color:rgb(239, 239, 239);
+        padding-left: 30%;
+        word-spacing: -0.3em;
+        letter-spacing: 0.07em;
+    }
+    .context span{
+        color:rgb(173, 173, 173);
+    }
+    .other06{
+        display: flex;
+        width: 100%;
+        padding-left: 30%;
+    }
+    .aboutbox{
+        margin-top: 5%;
+        border-top: solid 1px gray;
+        width: 100%;
+        padding-right: 5%;
+        
+    }
     </style>
 </head>
 <body>
     <div class= "navbar">
-        <p class="logo">Han_So_Mee</p>
-        <p class="logo">himio6543@gmail.com</p>
+        <p class="logo">HS</p>
         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html#aabout">About</a></li>
-            <li><a href="#">UP</a></li>
+            <li id="Home"><a href="index.html">MAIN</a></li>
+            <li id="Contact"><a href="#">PROJECT</a></li>
+            <li id="About"><a href="#aabout">ABOUT</a></li>
         </ul>
+        <span><img src="img/menu-icon4.png" height="40px" ></span>
     </div>
     <a href="#"><div class="go_up"></div></a>
     <div id="darkgraybg"></div>
@@ -92,7 +119,16 @@
             <div class="card_other  other03"></div>
             <div class="card_other  other04"></div>
             <div class="card_other  other05"></div>
-            <div class="card_other  other06"></div>
+            <div class="card_other  other06">
+                <div class="hidden aboutbox">
+                    <p class="about">About</p>
+                    <p class="context"> 클래스 101과 유튜브에서 3D 모델링을 보고 배우고 모작하여, 조명과 노드를 수정해서 오브젝트를 추가하였습니다. 
+                        그 중에 가로등와 단검의 로우 폴리곤을 모작하였습니다. 가로등의 텍스처는 노드와 모디파이어로 2D 처럼 만들어 보며 단검과 다른 검들을 추가해서 노드로 간단한 텍스처하고 조명을 했습니다. 
+                        <br><br><br>
+                           <span> 가로등 - 이브이 렌더링<br>
+                            나머지 - 싸이클 렌더링</span>
+                </div>
+            </div>
         </div>
     </div>
 </body>

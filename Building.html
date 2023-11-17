@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio_style.css">
+    <script defer src="runafterhtml.js"></script>
     <title>Document</title>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
@@ -19,56 +20,10 @@
     }
     body{
     background: #000000d2;
-    min-height: 550vh;
-    min-width: 100vh;
-    }
-    
-    .navbar {
-    background: black;
-    position: fixed;
+    min-height: 750vh;
     max-width: 1545px;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 25px 100px;
-    z-index: 100;
     }
-    .navbar .logo {
-    position: relative;
     
-    color: rgba(255, 255, 255, 0.808);
-    font-size: 0.7500em;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    transition: 0.5s;
-    font-weight: 500;
-    }
-    .navbar ul{
-    
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    .navbar ul li {
-    position: relative;
-    list-style-type: none;
-    }
-    .navbar ul li a {
-    
-    position: relative;
-    text-decoration: none;
-    margin: 0 16px;
-    color: rgba(255, 255, 255, 0.808);
-    font-size: 0.7500em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 1s;
-    font-weight: 500;
-    }
     
     .img01{
         background:url(img/house1_take01.jpg) no-repeat center center / cover;
@@ -85,18 +40,14 @@
     .img05{
         background:url(img/bld01.jpg) no-repeat center center / cover;
     }
-    .img06{
-        background:url(img/bld02.jpg) no-repeat center center / cover;
-    }
+   
     .img07{
         background:url(img/bld03.jpg) no-repeat center center / cover;
     }
     .img08{
         background:url(img/bld04.jpg) no-repeat center center / cover;
     }
-    .img09{
-        background:url(img/bld05.jpg) no-repeat 50% 30% / cover;
-    }
+    
     .img10{
         background:url(img/bld06.jpg) no-repeat 50%  30% / cover;
     }
@@ -112,116 +63,211 @@
     }
     .container_1{
     display:flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 7.8%;
-    max-height: 200em;
-    height: 100%;
+    margin-top: 15%;
+    height: 600vh;
     transition: 0.6s;
-    max-width: 1545px;
     width: 100%;
     position: relative;
     }
     .card_items_1{
     display: flex;
     flex-wrap: wrap;
-    flex: 0 0 auto;
-    padding-top: 2.4%;
     width: 100%;
-    max-width: 1545px;
-    max-height: 300px;
+    height: 100%;
     align-items: center;
-    justify-content: space-between;
-    gap: 2px;
-    }
-    .card01:first-child{
-        width: 100%;
-    }
-
-    .card01 {
+    justify-content: space-evenly;
+    flex-direction: column;
     
-    flex: 0 0 auto;
+    }
+    .card01 {
+    width: 100%;
     flex-grow:1;
     object-fit: scale-down;
-    border-bottom: solid 4px rgb(0, 0, 0);
-    border-left: solid 2px black; border-right: solid 2px black;
-    border-top: solid 4px black;
-    background-color: black;
-    border-radius:px;
+    border-bottom: solid 10px black; border-top: solid 1px black;
     height: 41em;
-    width: 50%;
     box-sizing: border-box;
     display: inline-block;
     position: relative;
     }
     .container_2{
+    border-bottom: solid 2px gray;
+    background-color: #000000d2;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3800px;
-    max-height: 100em;
-    height: 100%;
+    height: 80vh;
     transition: 0.6s;
     max-width: 1545px;
     width: 100%;
     position: relative;
     }
-    .card_items_2{
-    
+    .card-boxs{
+    border: solid 1px gray;
+    position: absolute;
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 auto;
-    padding-top: 2.4%;
-    width: 100%;
-    max-width: 1545px;
-    max-height: 2000px;
-    align-items: center;
-    justify-content: space-between;
+    width: 40%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 1em;
+    z-index: 1;
+    
+    }
+    .container_2-content{
+        width: 50%;
+        height: 100%;
+        padding: 10% 7%;
+    }
+    .container_2-content p{
+        color:rgb(239, 239, 239);
+
+        
+    }
+    .cardh-items{
+        height: 100%; width: 500%;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        animation: slide infinite 10s linear;
+        -webkit-animation: slide infinite 10s linear;
+        transition: 3s ease;
+        -webkit-transition: 3s ease;
+        margin: 0 400% 0 0;
+    }
+    @keyframes slide{
+        0% {left: 0%;}
+        10% {left: -100%;}
+        20% {left: -100%;}
+        30% {left: -100%;}
+        40% {left: -200%;}
+        50% {left: -200%;}
+        60% {left: -200%;}
+        70% {left: -300%;}
+        80% {left: -300%;}
+        90% {left: -300%;}
+        100% {left: -400%;}
+    }
+    @-webkit-keyframes
+        slide {
+        0% {left: 0%;}
+        12% {left: 0%;}
+        24% {left: -100%;}
+        36% {left: -100%;}
+        48% {left: -200%;}
+        60% {left: -200%;}
+        72% {left: -300%;}
+        84% {left: -300%;}
+        96% {left: -400%;}
+        100% {left: -400%;}
+    }    
+    .align{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .card02 {
-    flex: 0 0 auto;
-    flex-grow:1;
-    object-fit: scale-down;
-    border: solid 1px rgb(113, 113, 113);
-    background-color: black;
-    border-radius:px;
-    height: 39em;
-    width: 25%;
-    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
     display: inline-block;
     position: relative;
     }
+    .cardabout{
+    flex-grow:1;
+    background-color: black;
+    height: 20em;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    }
+    .About-bg{
+        display: flex;
+        border-top: solid 1px gray;
+        margin: 5% 0% 0% 25%;
+        width: 100%;
+    }
+    .context{
+        width: 100%;
+        margin-right: 4%;
+        word-spacing: -0.3em;
+        letter-spacing: 0.07em;
+        line-height: 1.6em;
+        color:rgb(239, 239, 239);
+    }
+   
+    .wrapper{
+        top: 740vh;
+    }
+    .context span{
+        color:rgb(173, 173, 173);
+    }
+    
     </style>
 </head>
 <body>
     <div class= "navbar">
-        <p class="logo">Han_So_Mee</p>
-        <p class="logo">himio6543@gmail.com</p>
+        <p class="logo">HS</p>
         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html#aabout">About</a></li>
-            <li><a href="#">UP</a></li>
+            <li id="Home"><a href="index.html">MAIN</a></li>
+            <li id="Contact"><a href="#">PROJECT</a></li>
+            <li id="About"><a href="#aabout">ABOUT</a></li>
         </ul>
+        <span><img src="img/menu-icon4.png" height="40px" ></span>
     </div>
     <a href="#"><div class="go_up"></div></a>
-    <div id="darkgraybg"></div>
+    <div id="darkgraybg">
+    </div>
     <div class="container_1">
         <div class="card_items_1">
             <div class="card01 img12"></div>
+            <div class="cardabout bg01">
+                <div class="hidden About-bg">
+                    <p class="about">About</p>
+                    <p class="context">비밀스럽고 호기심이 생기는 연금술사 집. 숨어 있는 것 같이 안개로 둘러싸여 있지만 당당하게 서 있는 물약 가게. 무엇을 살까? 말까? 고민이 되는 순간 어느덧 들어가...
+                        <br><br><br><span>피직스 옷감과 충돌, 모디파이어, 마테리얼 노드 셰이더, 파티클 프로퍼티스, 지오메트리 노드, 조명을 사용했습니다.</span>
+                        <br><br><br><span>블렌더 싸이클로 렌더링한 사진입니다.</span></p>
+                </div>
+            </div>
             <div class="card01 img05"></div>
             <div class="card01 img11"></div>
             <div class="card01 img10"></div>
-            <div class="card01 img09"></div>
             <div class="card01 img07"></div>
+            <div class="cardabout bg01">
+                <div class="hidden About-bg">
+                    <p class="about">About</p>
+                    <p class="context"> 종말이 지나고 수백 년 이후 현대 기술이 거의 잃어버린 시대에 생존하여 발달하고 있는 작은 마을. 그들은 어떻게 되었을까? 
+
+                        <span><br><br><br> 블렌더와 언리얼 엔진의 기능으로 빅토리안과 모던 스타일로 구성된 마을을 만들었습니다. 블렌더로 3D 모델링을 만든 후, 언리얼 엔진의 기능으로 식물, 땅, 조명, 안개, 필터 그리고 하늘을 조정했습니다. 3D 모델링의 이미지 텍스처는 포토샵과 블렌더 노드를 응용해 색과 텍스처를 변경한 뒤 적용했습니다.</p></span>
+                </div>
+            </div>
         </div>
     </div>
     
     <div class="container_2">
-        <div class="card_items_2">
-            <div class="card02 img01"></div>
-            <div class="card02 img02"></div>
-            <div class="card02 img03"></div>
-            <div class="card02 img04"></div>
+        <div class="align">
+        <div class="card-boxs">
+            <div class="cardh-items">
+                <div class="card02 img01"></div>
+                <div class="card02 img02"></div>
+                <div class="card02 img03"></div>
+                <div class="card02 img04"></div>
+                <div class="card02 img01"></div>
+            </div>
+        </div>
+        </div>
+        <div class="container_2-content">
+            <p>블렌더로 만든 모델링입니다. 노란, 하얀, 빨간, 보라 조명을 조절한 뒤, 이브이 렌더링한 사진입니다. 애드온 식물과 돌을 사용하여 오래된 집을 꾸몄습니다.</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="marquee">
+        <h1>
+            PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO
+        </h1>
         </div>
     </div>
 </body>
