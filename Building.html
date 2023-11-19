@@ -91,8 +91,8 @@
     position: relative;
     }
     .container_2{
-    border-bottom: solid 2px gray;
-    background-color: #000000d2;
+    background-color: rgb(44, 44, 44);
+    border-bottom: solid 2px black;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -111,16 +111,17 @@
     height: 70%;
     overflow: hidden;
     border-radius: 1em;
-    z-index: 1;
     
     }
     .container_2-content{
         width: 50%;
         height: 100%;
         padding: 10% 7%;
+        
     }
     .container_2-content p{
         color:rgb(239, 239, 239);
+        
 
         
     }
@@ -200,12 +201,30 @@
     }
    
     .wrapper{
-        top: 740vh;
+        top: 0; left: 0;
+        position: relative;
     }
     .context span{
         color:rgb(173, 173, 173);
     }
-    
+    .marquee-box{
+        background-color: #000000;
+        top: 705vh; height: 70vh;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 8%;
+    }
+    .container_2-content p a{
+        position: absolute;
+        margin: 24% 7% 10% 28%;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+    }
+    .container_2-content p a:hover{
+        color:gray;
+        transform: translateY(1px);
+    }
     </style>
 </head>
 <body>
@@ -214,7 +233,7 @@
         <ul>
             <li id="Home"><a href="index.html">MAIN</a></li>
             <li id="Contact"><a href="index.html#project1">PROJECT</a></li>
-            <li id="About"><a href="#aabout">ABOUT</a></li>
+            <li id="About"><a href="index.html#aabout">ABOUT</a></li>
         </ul>
         <span><img src="img/menu-icon4.png" height="40px" ></span>
     </div>
@@ -239,7 +258,7 @@
             <div class="cardabout bg01">
                 <div class="hidden About-bg">
                     <p class="about">About</p>
-                    <p class="context"> 종말이 지나고 수백 년 이후 현대 기술이 거의 잃어버린 시대에 생존하여 발달하고 있는 작은 마을. 그들은 어떻게 되었을까? 
+                    <p class="context"> 종말이 지나고 수백 년 이후 현대 기술이 거의 잃어버린 시대에 생존하여 발달하고 있는 작은 마을. 이 마을은 언제까지 평화가 지속될 것인가?
 
                         <span><br><br><br> 블렌더와 언리얼 엔진의 기능으로 빅토리안과 모던 스타일로 구성된 마을을 제작했습니다. 블렌더로 3D 모델링을 만든 후, 언리얼 엔진의 기능으로 식물, 땅, 조명, 안개, 필터 그리고 하늘을 조정했습니다. 3D 모델링의 이미지 텍스처는 포토샵과 블렌더 노드를 응용해 색과 텍스처를 변경한 뒤 적용했습니다.</p></span>
                 </div>
@@ -260,14 +279,17 @@
         </div>
         </div>
         <div class="container_2-content">
-            <p>블렌더로 만든 모델링입니다. 노란, 하얀, 빨간, 보라 조명을 조절한 뒤, 이브이 렌더링한 사진입니다. 애드온 식물과 돌을 사용하여 오래된 집을 꾸몄습니다.</p>
+            <p>블렌더로 제작한 모델링입니다. 노란, 하얀, 빨간, 보라 조명을 조절한 뒤, 이브이 렌더링한 사진입니다. 애드온 식물과 돌을 사용하여 오래된 집을 꾸몄습니다.</p>
+            <p><a href="index.html#project1">Go back >></a></p>
         </div>
     </div>
-    <div class="wrapper">
-        <div class="marquee">
-        <h1>
-            PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO
-        </h1>
+    <div class="marquee-box">
+        <div class="wrapper">
+            <div class="marquee">
+                <h1>
+                PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO
+                </h1>
+            </div>
         </div>
     </div>
 </body>
