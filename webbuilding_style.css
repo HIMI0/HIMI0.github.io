@@ -1,0 +1,181 @@
+@media screen and (max-width="1545px") {
+    
+
+::-webkit-scrollbar {
+    display: none;
+    }
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    }
+    body{
+    background: #000000d2;
+    min-height: 750vh;
+    max-width: 1545px;
+    }
+    .container_1{
+    display:flex;
+    align-items: center;
+    margin-top: 15%;
+    height: 600vh;
+    transition: 0.6s;
+    width: 100%;
+    position: relative;
+    }
+    .card_items_1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+    }
+    .card01 {
+    width: 100%;
+    flex-grow:1;
+    object-fit: scale-down;
+    border-bottom: solid 10px black; border-top: solid 1px black;
+    height: 41em;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    }
+    .container_2{
+    background-color: rgb(44, 44, 44);
+    border-bottom: solid 2px black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    transition: 0.6s;
+    max-width: 1545px;
+    width: 100%;
+    position: relative;
+    }
+    .card-boxs{
+    border: solid 1px gray;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    width: 40%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 1em;
+    
+    }
+    .container_2-content{
+        width: 50%;
+        height: 100%;
+        padding: 10% 7%;
+        
+    }
+    .container_2-content p{
+        color:rgb(239, 239, 239);
+        
+
+        
+    }
+    .cardh-items{
+        height: 100%; width: 500%;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        animation: slide infinite 10s linear;
+        -webkit-animation: slide infinite 10s linear;
+        transition: 3s ease;
+        -webkit-transition: 3s ease;
+        margin: 0 400% 0 0;
+    }
+    @keyframes slide{
+        0% {left: 0%;}
+        12% {left: 0%;}
+        24% {left: -100%;}
+        36% {left: -100%;}
+        48% {left: -200%;}
+        60% {left: -200%;}
+        72% {left: -300%;}
+        84% {left: -300%;}
+        96% {left: -400%;}
+        100% {left: -400%;}
+    }
+    @-webkit-keyframes
+        slide {
+        0% {left: 0%;}
+        12% {left: 0%;}
+        24% {left: -100%;}
+        36% {left: -100%;}
+        48% {left: -200%;}
+        60% {left: -200%;}
+        72% {left: -300%;}
+        84% {left: -300%;}
+        96% {left: -400%;}
+        100% {left: -400%;}
+    }    
+    .align{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .card02 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    display: inline-block;
+    position: relative;
+    }
+    .cardabout{
+    flex-grow:1;
+    background-color: black;
+    height: 20em;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    }
+    .About-bg{
+        display: flex;
+        border-top: solid 1px gray;
+        margin: 5% 0% 0% 25%;
+        width: 100%;
+    }
+    .context{
+        width: 100%;
+        margin-right: 4%;
+        word-spacing: -0.3em;
+        letter-spacing: 0.07em;
+        line-height: 1.6em;
+        color:rgb(239, 239, 239);
+    }
+   
+    .wrapper{
+        top: 0; left: 0;
+        position: relative;
+    }
+    .context span{
+        color:rgb(173, 173, 173);
+    }
+    .marquee-box{
+        background-color: #000000;
+        top: 705vh; height: 70vh;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 8%;
+    }
+    .container_2-content p a{
+        position: absolute;
+        margin: 24% 7% 10% 28%;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+    }
+    .container_2-content p a:hover{
+        color:gray;
+        transform: translateY(1px);
+    }
+}

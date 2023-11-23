@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio_style.css">
+    <link rel="stylesheet" href="webothers_style.css">
     <script defer src="runafterhtml.js"></script>
     <title>Document</title>
     <style>
@@ -11,10 +12,12 @@
     
     body {
     background: #000000d2;
-    min-height: 300vh;
+    min-height: 250vh;
     max-width: 1545px;
     }
-    
+    p{
+        font-size: 0.9em;
+    }
     .card_other{
     flex: 0 0 auto;
     flex-grow:1;
@@ -99,6 +102,18 @@
         padding-right: 5%;
         
     }
+    .goback{
+        margin: 20% 5% 10% 80%;
+    }
+    .goback a{
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+    }
+    .goback a:hover{
+        color:gray;
+        transform: translateY(1px);
+    }
     </style>
 </head>
 <body>
@@ -128,6 +143,7 @@
                         <br><br><br>
                            <span> 가로등 - 이브이 렌더링<br>
                             나머지 - 싸이클 렌더링</span>
+                            <p class="goback"><a href="index.html#project1">Go back >></a></p>
                 </div>
             </div>
         </div>

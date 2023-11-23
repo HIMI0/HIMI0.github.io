@@ -1,53 +1,15 @@
+@media screen and (max-width="1545px") {
+    
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
-::-webkit-scrollbar {
-    display: none;
-}
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-*, *::after, *::before {
-	-webkit-user-select: none;
-    -ms-user-select: none;
-     user-select: none;
-     -moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-app-region: no-drag;
-}
 body {
     margin: 0px auto;
-    background: #121212ef;
-    min-height: 310vh;
+    min-height: 380vh;
     max-width: 1545px;
-}
-body:after{
-    position: absolute;
-    width: 0; height: 0;
-    overflow: hidden; 
-    z-index: -1;
-    content: url(img/character_take01.jpg)
-    url(img/house1_photo.jpg) url(img/modern_02.jpg) url(img/gameboy_photo1.jpg);
-}
-.hidden{
-    opacity: 0;
-    transition: all 1s;
-}
-.show{
-    opacity: 1;
 }
 .navbar {
-    background: rgba(12, 12, 12, 0.936);
     position: fixed;
     max-width: 1545px;
-    width: 99%; padding: 0% 0.5%; height: 70px;
+    width: 99%; padding: 0% 0.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +20,6 @@ body:after{
 }
 .navbar .logo {
     position: relative;
-    color: rgba(255, 255, 255, 0.808);
     font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -143,7 +104,7 @@ body:after{
     justify-content: center; align-items: center;
     width: 100%;
     max-width: 1545px;
-    height: 80vh;
+    height: 100vh;
     max-height: 1080px;
     background-size: 100%;
     perspective: 950px;
@@ -163,7 +124,7 @@ body:after{
     column-gap: 2em;
 }
 .cube{
-    zoom: 0.18;
+    zoom: 0.2;
     width: 310px; height: 310px;
     transform-origin: 50% 50% 155px;
     transform-style: preserve-3d;
@@ -171,23 +132,23 @@ body:after{
     box-shadow: inset 0 0 25px rgba(255,255,255,0.5);
 }
 .cube:nth-child(2){
-    zoom: 0.18;
+    zoom: 0.2;
     
 }
 .cube:nth-child(3){
-    zoom: 0.18;
+    zoom: 0.2;
     
 }
 .cube:nth-child(4){
-    zoom: 0.18;
+    zoom: 0.2;
     
 }
 .cube:nth-child(5){
-    zoom: 0.18;
+    zoom: 0.2;
     
 }
 .cube:nth-child(6){
-    zoom: 0.18;
+    zoom: 0.2;
     
 }
 .cube .face{
@@ -292,29 +253,31 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
 }
 .scene_01 #one {
     font-size: 3em;
+    
 }
 .scene_01 #two {
     font-size: 1.4em;
+    
     width: 100%;
     padding-bottom: 140px;
 }
 .bg2{
     position: absolute;
     background:linear-gradient(rgb(32, 32, 32), rgb(0, 0, 0));
-    margin-top: 16%;
-    height: 90vh; width: 100%; max-width: 1545px;
+    margin-top: 25%;
+    height: 110vh; width: 100%;
     display: flex;
     align-items: center; 
 }
 #project1{
     position: absolute;
-    bottom: 110vh;
+    bottom: 123vh;
     
 }
 .project-content{
     color: rgb(224, 224, 224);
     height: 20%; width: 100%;
-    top: 2%;
+    top: 3%;
     position: absolute;
 }
 .project-content .project-title h1{
@@ -335,11 +298,10 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
     position: absolute;
 }
 .container{
-    padding-top: 3%;
     display:flex;
     align-items: center;
     position: relative;
-    width: 100%; height: 55%; max-width: 1545px;
+    width: 100%; height: 50%;
 }
 .container .card_items{
     
@@ -348,7 +310,7 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    flex-wrap: wrap; column-gap: 24em;
+    flex-wrap: wrap; column-gap: 22.7em;
     padding-left: 0.5%; padding-right: 0.5%;
 }
 .container .card_items .card {
@@ -410,8 +372,8 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
 }
 .About-container{
     position: absolute;
-    top: 192vh;
-    width: 100%; max-width: 1545px;
+    top: 240vh;
+    width: 100%;
     height: 500px;
     display: flex;
     align-items: center;
@@ -449,15 +411,14 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
     align-items: center;
 }
 #aabout {
-    top: 180vh;
+    top: 240vh;
     position: absolute;
-    height: 20%; width: 100%; max-width: 1545px;
-    z-index: -1;
+    height: 20%; width: 100%;
     background-color: rgba(255, 255, 255, 0);
 }
 
 .wrapper {
-    top: 280vh;
+    top: 343vh;
     position: absolute;
     max-width: 100%;
     overflow: hidden;
@@ -476,12 +437,34 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
     display: inline-block;
     letter-spacing: 30px;
 }
+@media screen and (max-width:1460px){
+    .card{
+        width: 25%;
+    }
+ }
+@media screen and (max-width:900px) {
+    .navbar ul li a{
+        font-size: 0.78em; margin: 0 15px;
+    }
+    .navbar ul li a:hover{
+        border-radius: 3px;
+        padding: 13px;
+        background-color: white;
+        color: black;
+    }
+    .card{
+        height: 100%; width: 60.4%;
+    }
+    .container .card_items{
+        height: 100%; width: 100%;
+        column-gap: 0em;
+    }   
+}
+@media screen and (max-width:600px) {
+    .card{
+        height: 80%;
+    }
+    
+}
 
-@keyframes marquee {
-    0% {
-    transform: translateX(0, 0, 0);
-    }
-    100% {
-    transform: translateX(-50%);
-    }
 }
