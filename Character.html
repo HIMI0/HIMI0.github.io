@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio_style.css">
+    <link rel="stylesheet" href="webch_style.css">
     <script defer src="runafterhtml.js"></script>
     <title>Document</title>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
     body {
-    margin: 0 auto;
-    min-height: 500vh;
+    min-height: 410vh;
     max-width: 1545px;
     background: #000000;
     display: flex;
@@ -47,9 +47,10 @@
     .tab-in{
     border: solid 2px rgb(60, 60, 60);
     position: absolute;
-    top: 35%;
+    top: 30%;
     width: 90%;
-    height: 80vh;
+    max-width: 1545px;
+    height: 70vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -86,6 +87,10 @@
         height: 100%; width: 100%;
         object-fit: contain;
     }
+    .tab-in .slide .slide-in img:nth-child(7){
+        object-fit: contain;
+        height: 90%;
+    }
     .btn{
     position: absolute;
     bottom: 3%;
@@ -93,7 +98,6 @@
     display: flex;
     justify-content: center;
     width: 1545px;
-
     }
     .btn label{
     width: 13px; height: 13px;
@@ -112,25 +116,25 @@
     }
         
     input[id=radio1]:checked ~ .slide .slide-in {
-    left: -178px;
+    left: -13%;
     }
     input[id=radio2]:checked ~ .slide .slide-in {
-    left: -1500px;
+    left: -113%;
     }
     input[id=radio3]:checked ~ .slide .slide-in {
-    left: -2800px;
+    left: -213%;
     }
     input[id=radio4]:checked ~ .slide .slide-in {
-    left: -4120px;
+    left: -313%;
     }
     input[id=radio5]:checked ~ .slide .slide-in {
-    left: -5400px;
+    left: -410%;
     }
     input[id=radio6]:checked ~ .slide .slide-in {
-    left: -6790px;
+    left: -513%;
     }
     input[id=radio7]:checked ~ .slide .slide-in {
-            left: -8080px;
+            left: -613%;
         }
         input[id=radio1]:checked ~.btn label[for=radio1],
         input[id=radio2]:checked ~.btn label[for=radio2],
@@ -182,10 +186,11 @@
 /* end slide picture */
 /* wrapper*/
     .wrapper2 {
-    top: 13%;
+    top: 10%;
     position: absolute;
     max-width: 1545px;
     width: 100%;
+    height: 30%;
     overflow: hidden;
     }
 
@@ -214,20 +219,27 @@
     }
 
     .wrapper {
-        top: 465vh;
+        top: 380vh;
     }
     .marquee h1{
         color: rgb(173, 173, 173);
     }
 /* endwrapper*/
 /* about concept character section*/
+    .AAbout-section1{
+        width: 100%; max-width: 1545px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        z-index: 100;
+        top: 0;
+        margin-top: 110vh;
+    }
     .Aboutch-section{
     border-top: solid 1px gray;
     box-sizing: border-box;
-    top: 130vh;
     margin-left: 25%;
     width: 75%;
-    position: absolute;
     padding-top: 1.5em;
     }
     .Aboutch-section div{
@@ -242,27 +254,27 @@
     }
     .contextch{
         color:rgb(239, 239, 239);
-        padding-left: 30%; padding-right: 5%;
+        padding-left: 30%;
         word-spacing: -0.3em;
         letter-spacing: 0.07em;
         line-height: 1.6em;
-
     }
 /* end concept character section*/
 /* about mesh & topology section */
     .about-ch-section{
-    margin-top: 60vh;
-    position: relative;
-    height: 100vh; width: 100%;
+    position: absolute;
+    height: 80vh; width: 100%; 
     background-color: #252525;
     box-sizing: border-box;
     display: flex;
+    top: 190vh;
+    max-width:1545px;
 
     }
     .meshtopology-img{
         border-right: solid 3px rgb(255, 255, 255);
         background-color: white;
-        height: 100%; width: 50%;
+        height: 100%; width: 50%; 
         object-fit: contain;
     }
     .meshtopology-img img{
@@ -294,8 +306,8 @@
     .about-ch-section2{
         background-color:#252525;
         position: absolute;
-        top: 335vh;
-        height: 100vh; width: 100%;
+        top: 270vh;
+        height: 80vh; width: 100%; max-width: 1545px;
         box-sizing: border-box;
         display: flex;
     }
@@ -338,8 +350,8 @@
     }
     .section2bg{
         background-image:linear-gradient(180deg, rgb(231, 231, 231),rgb(228, 228, 228));
-        top: 190vh;
-        height: 305vh; width: 100%;
+        top: 160vh;
+        height: 240vh; width: 100%; max-width: 1545px;
         position: absolute;
     }
     .mesh img, .mesh2 img{
@@ -361,17 +373,20 @@
         margin-left: 5%;
     }
     .marquee span{
-        color: black;
+        color: rgb(0, 0, 0);
     }
     .goback-box{
-         width: 100%;
-         position: absolute;
-         top: 440vh; padding-left: 90%;
+        position: absolute;
+         width: 100%; 
+         max-width: 1545px;
+         top: 355vh; 
         }
     .goback a{
         color: rgb(0, 0, 0);   
         text-decoration: none;
         transition: 0.3s;
+        padding-left: 90%;
+        font-weight: 500;
     }
     .goback a:hover{
         color:gray;
@@ -446,14 +461,16 @@
             }
         }, 5000);
     </script>
-    <div class="hidden Aboutch-section">
+        <div class="AAbout-section1">
+        <div class="Aboutch-section">
         <p class="aboutch">About</p>
         <p class="contextch">포스트 묵시록 시대에서 생존하는 강한 여자. 옛날 기술을 전수받아 현대 기술와 함께 활용하면서 발전해 나갑니다.<br><br><br>
             오염과 전쟁으로 인해 지구는 멸망하였다. 사람이 살수 없는 환경이 되어 사람들은 두려움과 희망을 잃었다. 그럼에도 불구하고 인류는 끝나지 않았다. 그때, 
             진화된 인간, 동물 그리고 물질들이 점점 생겨나면서 그들에게 새로운 시대가 시작되었다. 하지만 진화된 종들은 오염도가 높아 인간과 함께 살 수 가 없었다.
              그렇게 그들은 흩어지면서 안전한 곳을 찾아 정착하였지만... 얼마 후 스카벤져가 나타나 그들을 탐색하면서 또 다시 악몽에 시달렸다. 한편 스카벤져로부터 
              지키는 집단이 있었는데 이 집단에서 태어난 한 여자의 이야기가 시작된다...</p>
-    </div>
+        </div>
+        </div>
     <div class="hidden section2bg">
         <div>캐릭터 만드는 과정 요약</div>
             <p>&nbsp;The process of making character</p>

@@ -25,7 +25,7 @@
 body {
     margin: 0px auto;
     background: #121212ef;
-    min-height: 380vh;
+    min-height: 310vh;
     max-width: 1545px;
 }
 body:after{
@@ -47,7 +47,7 @@ body:after{
     background: rgba(12, 12, 12, 0.936);
     position: fixed;
     max-width: 1545px;
-    width: 99%; padding: 0% 0.5%;
+    width: 99%; padding: 0% 0.5%; height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,7 +100,7 @@ body:after{
     font-size: 0.8em;
     letter-spacing: 5px;
     transition: 0.6s;
-    font-weight: 300;
+    font-weight: 400;
 
 }
 .navbar ul li a:hover{
@@ -143,7 +143,7 @@ body:after{
     justify-content: center; align-items: center;
     width: 100%;
     max-width: 1545px;
-    height: 100vh;
+    height: 80vh;
     max-height: 1080px;
     background-size: 100%;
     perspective: 950px;
@@ -163,7 +163,7 @@ body:after{
     column-gap: 2em;
 }
 .cube{
-    zoom: 0.2;
+    zoom: 0.18;
     width: 310px; height: 310px;
     transform-origin: 50% 50% 155px;
     transform-style: preserve-3d;
@@ -171,23 +171,23 @@ body:after{
     box-shadow: inset 0 0 25px rgba(255,255,255,0.5);
 }
 .cube:nth-child(2){
-    zoom: 0.2;
+    zoom: 0.18;
     
 }
 .cube:nth-child(3){
-    zoom: 0.2;
+    zoom: 0.18;
     
 }
 .cube:nth-child(4){
-    zoom: 0.2;
+    zoom: 0.18;
     
 }
 .cube:nth-child(5){
-    zoom: 0.2;
+    zoom: 0.18;
     
 }
 .cube:nth-child(6){
-    zoom: 0.2;
+    zoom: 0.18;
     
 }
 .cube .face{
@@ -290,33 +290,23 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
     top: 80%; 
     
 }
-.scene_01 #one {
-    font-size: 3em;
-    
-}
-.scene_01 #two {
-    font-size: 1.4em;
-    
-    width: 100%;
-    padding-bottom: 140px;
-}
 .bg2{
     position: absolute;
     background:linear-gradient(rgb(32, 32, 32), rgb(0, 0, 0));
-    margin-top: 25%;
-    height: 110vh; width: 100%;
+    margin-top: 16%;
+    height: 90vh; width: 100%; max-width: 1545px;
     display: flex;
-    align-items: center;  
+    align-items: center; 
 }
 #project1{
     position: absolute;
-    bottom: 123vh;
+    bottom: 110vh;
     
 }
 .project-content{
     color: rgb(224, 224, 224);
     height: 20%; width: 100%;
-    top: 3%;
+    top: 2%;
     position: absolute;
 }
 .project-content .project-title h1{
@@ -337,19 +327,19 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
     position: absolute;
 }
 .container{
+    padding-top: 3%;
     display:flex;
     align-items: center;
     position: relative;
-    width: 100%; height: 50%;
+    width: 100%; height: 55%; max-width: 1545px;
 }
 .container .card_items{
-    
     position: absolute;
     height: 100%; width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    flex-wrap: wrap; column-gap: 22.7em;
+    flex-wrap: wrap; column-gap: 24em;
     padding-left: 0.5%; padding-right: 0.5%;
 }
 .container .card_items .card {
@@ -411,8 +401,8 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
 }
 .About-container{
     position: absolute;
-    top: 240vh;
-    width: 100%;
+    top: 192vh;
+    width: 100%; max-width: 1545px;
     height: 500px;
     display: flex;
     align-items: center;
@@ -450,14 +440,15 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
     align-items: center;
 }
 #aabout {
-    top: 240vh;
+    top: 180vh;
     position: absolute;
-    height: 20%; width: 100%;
+    height: 20%; width: 100%; max-width: 1545px;
+    z-index: -1;
     background-color: rgba(255, 255, 255, 0);
 }
 
 .wrapper {
-    top: 343vh;
+    top: 280vh;
     position: absolute;
     max-width: 100%;
     overflow: hidden;
@@ -484,34 +475,4 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
     100% {
     transform: translateX(-50%);
     }
-}
-
-@media screen and (max-width:1460px){
-    .card{
-        width: 25%;
-    }
- }
-@media screen and (max-width:900px) {
-    .navbar ul li a{
-        font-size: 0.78em; margin: 0 15px;
-    }
-    .navbar ul li a:hover{
-        border-radius: 3px;
-        padding: 13px;
-        background-color: white;
-        color: black;
-    }
-    .card{
-        height: 100%; width: 60.4%;
-    }
-    .container .card_items{
-        height: 100%; width: 100%;
-        column-gap: 0em;
-    }   
-}
-@media screen and (max-width:600px) {
-    .card{
-        height: 80%;
-    }
-    
 }
