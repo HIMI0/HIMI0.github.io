@@ -21,7 +21,7 @@
     }
     body{
     background: #000000d2;
-    height: 560vh;
+    height: 500vh;
     max-width: 1545px;
     }
     
@@ -226,6 +226,32 @@
     p {
         font-size: 0.9em;
     }
+    @media screen and (max-width:1920px) {
+    body{
+        min-height: 750vh;
+    }
+    .container_1{
+        min-height: 600vh;
+    }
+    .container_2-content{
+        padding: 10% 7%;  
+    } 
+    .cardabout{
+        height: 20em;
+    }
+    .About-bg{
+        margin: 5% 0% 0% 25%;
+    }
+    #go-back{
+        margin: 20% 7% 10% 28%;
+    }
+    .container_2{
+        top: 0%;
+    }
+    p{
+        font-size: 1em;
+    }
+    }
     </style>
 </head>
 <body>
@@ -281,7 +307,7 @@
         </div>
         <div class="container_2-content">
             <p>블렌더로 제작한 모델링입니다. 노란, 하얀, 빨간, 보라 조명을 조절한 뒤, 이브이 렌더링한 사진입니다. 애드온 식물과 돌을 사용하여 오래된 집을 꾸몄습니다.</p>
-            <p><a href="index.html#project1">Go back >></a></p>
+            <p><a id="go-back" href="index.html#project1">Go back >></a></p>
         </div>
     </div>
     <div class="marquee-box">
