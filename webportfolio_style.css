@@ -1,442 +1,63 @@
-@media screen and (max-width="1545px") {
+@media screen and (max-width:1920px) {
     
-
 body {
     margin: 0px auto;
     min-height: 380vh;
     max-width: 1545px;
 }
 .navbar {
-    position: fixed;
-    max-width: 1545px;
-    width: 99%; padding: 0% 0.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    top: 3%;
-    padding: 30px 50px;
-    z-index: 100;
+    height: 60px;
 }
-.navbar .logo {
-    position: relative;
-    font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    transition: 0.6s;
-    font-weight: 600;
-    padding-left: 25px;
-}
-.emailtext{
-    position:absolute;
-    -webkit-user-select: text;
-    -ms-user-select: text;
-     user-select: text;
-     -moz-user-select: text;
-	-webkit-user-drag: text;
-    font-size: 0.6em;
-    writing-mode: vertical-lr;
-    letter-spacing: 7px;
-    top: 30%; left: 98%;
-    
-}
-.navbar ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 15%;
-}
-.navbar ul li {
-    position: relative;
-    list-style-type: none;
-    transition: 0.6s;
-    
-}
-.navbar ul li a {
-    position: relative;
-    text-decoration: none;
-    margin: 0 40px;
-    color: rgba(255, 255, 255, 0.808);
-    font-size: 0.8em;
-    letter-spacing: 5px;
-    transition: 0.6s;
-    font-weight: 400;
-
-}
-.navbar ul li a:hover{
-    border-radius: 5px;
-    padding: 20px;
-    background-color: white;
-    color: black;
-}
-.navbar span{
-    background-color: rgba(216, 216, 216, 0.936);
-    position: absolute;
-    right: 0; top: 0;
-    height:100%; width: 13%;
-    display: flex;
-    align-items: center;
-}
-.navbar span img{
-    position: absolute;
-    right: 7%;
-}
-.go_up{
-    top: 90%;
-    left: 93%;
-    position: absolute;
-    height: 40px; width: 40px;
-    background: url(img/icon.png) no-repeat center center / contain;
-    position: fixed;
-    border-radius: 4px;
-    z-index: 100;
-    transition: 0.3s;
-}
-.go_up:hover{
-    transform: translateY(-3px);
+.navbar {
+    height: 60px;
 }
 .bg_01 {
-    position: relative;
-    box-sizing: border-box;
-    top: 0; left: 0;
-    display: flex;
-    justify-content: center; align-items: center;
-    width: 100%;
-    max-width: 1545px;
     height: 100vh;
-    max-height: 1080px;
-    background-size: 100%;
-    perspective: 950px;
-    background:linear-gradient(rgba(108, 108, 108, 0.759),rgb(22, 22, 22)), no-repeat center center / cover;
-}
-.cube-container{
-    height: 300px; width: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.cube-items{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    column-gap: 2em;
 }
 .cube{
     zoom: 0.2;
-    width: 310px; height: 310px;
-    transform-origin: 50% 50% 155px;
-    transform-style: preserve-3d;
-    transition: all 0.6s ease-out;
-    box-shadow: inset 0 0 25px rgba(255,255,255,0.5);
 }
 .cube:nth-child(2){
     zoom: 0.2;
-    
 }
 .cube:nth-child(3){
     zoom: 0.2;
-    
 }
 .cube:nth-child(4){
     zoom: 0.2;
-    
 }
 .cube:nth-child(5){
     zoom: 0.2;
-    
 }
 .cube:nth-child(6){
     zoom: 0.2;
-    
-}
-.cube .face{
-    position: absolute;
-    top: 0; left: 0;
-    height: 100%; width: 100%;
-    display: flex; justify-content: center; align-items: center;
-}
-.cube .face2{
-    position: absolute;
-    top: 5%; left: 5%; 
-    height: 90%; width: 90%;
-    display: flex; justify-content: center; align-items:center;
-    font-size: 98px; font-weight: 500; color: rgb(95, 95, 95);
-    white-space: pre-line;
-   
-}
-.cube .face:nth-child(1){
-    transform: translateZ(310px);
-    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.5);
-    
-}
-.cube .face:nth-child(2){
-    transform-origin: center right;
-    transform: rotateY(90deg);
-    box-shadow: inset 0 0 25px rgba(255,255,255,0.5);
-}
-.cube .face:nth-child(3){
-    transform-origin: center center;
-    transform: rotateY(180deg);
-    box-shadow: inset 0 0 25px rgba(255,255,255,0.5);
-}
-.cube .face:nth-child(4){
-    transform-origin: center left;
-    transform: rotateY(-90deg);
-    box-shadow: inset 0 0 25px rgba(255,255,255,0.5);
-}
-.cube .face:nth-child(5){
-    transform-origin: top center;
-    transform: rotateX(90deg);
-    box-shadow: inset 0 0 25px rgba(255,255,255,0.5);
-}
-.cube .face:nth-child(6){
-    transform-origin: bottom center;
-    transform: rotateX(-90deg);
-    box-shadow: inset 0 0 25px rgba(255,255,255,0.5);
-}
-.cube .face2:nth-child(7){
-    transform: translateZ(279px);
-    background:linear-gradient(rgb(115, 115, 115), rgb(165, 165, 165));
-    
-}
-.cube .face2:nth-child(8){
-    transform-origin: center right;
-    transform: rotateY(90deg);
-    background:linear-gradient(rgb(194, 194, 194), rgb(244, 244, 244));
-}
-.cube .face2:nth-child(9){
-    transform-origin: center center;
-transform: rotateY(180deg);
-background:linear-gradient(rgb(133, 133, 133), rgb(183, 183, 183));
-}
-.cube .face2:nth-child(10){
-transform-origin: center left;
-transform: rotateY(-90deg);
-background:linear-gradient(rgb(50, 50, 50), rgb(111, 111, 111));
-}
-.cube .face2:nth-child(11){
-transform-origin: top center;
-transform: rotateX(90deg);
-background:linear-gradient(to right, rgb(228, 228, 228), rgb(159, 159, 159));
-}
-.cube .face2:nth-child(12){
-transform-origin: bottom center;
-transform: rotateX(-90deg);
-background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
-}
-
-.scene_01 {
-    width: 100%; height: 100%;
-    position: absolute;
-    color: rgba(255, 255, 255, 0.938);
-}
-.scene_01 #main {
-    color: white;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    
-}
-.scene_01 #main a{
-    position: absolute;
-    text-decoration: none;
-    color: rgb(189, 189, 189);
-    font-size: 0.5em;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 5px;
-    margin-left: 0 auto; margin-right: 0 auto;
-    top: 80%; 
-    
-}
-.scene_01 #one {
-    font-size: 3em;
-    
-}
-.scene_01 #two {
-    font-size: 1.4em;
-    
-    width: 100%;
-    padding-bottom: 140px;
 }
 .bg2{
-    position: absolute;
-    background:linear-gradient(rgb(32, 32, 32), rgb(0, 0, 0));
     margin-top: 25%;
-    height: 110vh; width: 100%;
-    display: flex;
-    align-items: center; 
+    height: 110vh;
 }
 #project1{
-    position: absolute;
-    bottom: 123vh;
-    
+    bottom: 123vh; 
 }
 .project-content{
-    color: rgb(224, 224, 224);
-    height: 20%; width: 100%;
     top: 3%;
-    position: absolute;
-}
-.project-content .project-title h1{
-    font-size: 4em;
-    letter-spacing: 11px;
-    padding-left: 6%;
-    text-transform: uppercase;
-}
-.project-content .project-title p{
-    padding-left: 6.3%;
-    bottom: 95%;
-    position: absolute;
-    color: rgb(163, 163, 163);
-}
-.project-content .project-title span{
-    
-    height: 1%; width: 3%; left: 5%; top: 80%;
-    position: absolute;
 }
 .container{
-    display:flex;
-    align-items: center;
-    position: relative;
-    width: 100%; height: 50%;
+     height: 50%; padding: 0;
 }
 .container .card_items{
-    
-    position: absolute;
-    height: 100%; width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap; column-gap: 22.7em;
-    padding-left: 0.5%; padding-right: 0.5%;
-}
-.container .card_items .card {
-    position: absolute;
-    border: solid 1.5px gray;
-    border-radius: 3px;
-    display: inline-block;
-    -webkit-transition: 0.8s ease;
-    -moz-transition: 0.8s ease;
-    -o-transition: 0.8s ease;
-    transition: 0.8s ease;
-    cursor: pointer;
-    z-index: 2;
-    width: 24.5%; height: 100%; 
-}
-
-.card p:nth-child(2) {
-    color: rgba(255, 255, 255, 0.68);
-    margin: 0px;
-    text-decoration: none;
-    font-size: 12px;
-    padding-left:  20px;
-    position: relative;
-    bottom: 13px;
-}
-
-.card1{
-    background: url(img/house1_photo_B&W2.jpg) no-repeat center center / cover;
-}
-.card2{
-    background: url(img/character_take01_B&W.png) no-repeat center center / cover;
-}
-.card3{
-    background: url(img/modern_011.jpg) no-repeat 0% center / cover;
-}
-.card4{
-    background: url(img/gameboy_photo_de.jpg) no-repeat center center / cover;
-}
-.card1:hover{
-    background: url(img/house1_photo.jpg) no-repeat center center / cover;
-}
-.card2:hover{
-    background: url(img/character_take01.jpg) no-repeat center center / cover; 
-}
-.card3:hover{
-    background: url(img/modern_02.jpg) no-repeat 0% top / cover;
-}
-.card4:hover{
-    background: url(img/gameboy_photo1.jpg) no-repeat center center / cover;
-}
-
-.icon-title {
-    color: rgba(255, 255, 255, 0.803);
-    padding: 15px 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.7em;
-    font-weight: 500;
+     column-gap: 22.7em;
 }
 .About-container{
-    position: absolute;
     top: 240vh;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-}
-#About-section{
-    border-top: solid 1px gray;
-    margin-left: 25%;
-    width: 100%;
-}
-.About-section div{
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.about{
-    padding-top: 1.5em;
-    float: left;
-    color: white;
-}
-.context{
-    padding-top: 1.5em;
-    color: white;
-    padding-left: 30%;
-}
-#About-programused{
-    position:absolute;
-    padding-left: 25%;
-    width: 100%;
-    margin-top: 30%;
-}
-.About-programused div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 #aabout {
     top: 240vh;
-    position: absolute;
-    height: 20%; width: 100%;
-    background-color: rgba(255, 255, 255, 0);
 }
-
 .wrapper {
     top: 343vh;
-    position: absolute;
-    max-width: 100%;
-    overflow: hidden;
 }
 
-.marquee {
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: marquee 11s linear infinite;
-}
-
-.marquee h1 {
-    font-size: 10em;
-    color: rgba(255, 255, 255, 0.842);
-    display: inline-block;
-    letter-spacing: 30px;
-}
 @media screen and (max-width:1460px){
     .card{
         width: 25%;

@@ -1,50 +1,9 @@
-@media screen and (max-width:1545px) {
+
+@media screen and (max-width:1920px) {
 body {
     background: #000000d2;
     min-height: 300vh;
     max-width: 1545px;
-    }
-    .card_bg{
-    flex: 0 0 auto;
-    flex-grow:1;
-    object-fit: scale-down;
-    border: solid 2px rgb(0, 0, 0);
-    background-color: black;
-    border-radius:px;
-    height: 44em;
-    width: 50%;
-    box-sizing: border-box;
-    display: inline-block;
-    position: relative;
-    }
-    .card_bg img{
-        display: block;
-        width: 100%;
-    }
-    .container_bg{
-    padding-top: 10%;
-    
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 200em;
-    height: 100%;
-    transition: 0.6s;
-    max-width: 1545px;
-    width: 100%;
-    position: relative;
-    }
-    .card_items_bg{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 auto;
-    padding-top: 2.4%;
-    width: 100%;
-    max-width: 1545px;
-    max-height: 300px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2px;
     }
     .About-background{
         background-color: black;
@@ -53,46 +12,14 @@ body {
         padding-left: 30%;
     }
     .aboutbox{
-        margin-top: 5%;
-        border-top: solid 1px gray;
-        width: 100%;
-        
-    }
-    .about{
-    padding-top: 1.5em;
-    float: left;
-    color:rgb(239, 239, 239);
-    }
-    .context{
-    padding-top: 1.5em;
-    color:rgb(239, 239, 239);
-    padding-left: 30%;
-    word-spacing: -0.3em;
-        letter-spacing: 0.07em;
-    }
-    .context span{
-        color:rgb(173, 173, 173);
-    }
-    .wrapper{
-        top: 5%;
+        padding:0;
     }
     .wrapperwrapper{
-        position: absolute;
         top: 500vh;
-        height: 40vh; width: 100%;
-        background-color: black;
-        z-index: 1;
+        height: 40vh; 
     }
     .goback{
         margin: 20% 5% 10% 80%;
     }
-    .goback a{
-        text-decoration: none;
-        color: white;
-        transition: 0.3s;
-    }
-    .goback a:hover{
-        color:gray;
-        transform: translateY(1px);
-    }
+
 }

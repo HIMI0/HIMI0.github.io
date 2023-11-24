@@ -1,199 +1,33 @@
-@media screen and (max-width="1545px") {
+
+@media screen and (max-width:1920px) {
 body {
     margin: 0 auto;
     min-height: 500vh;
     max-width: 1545px;
-    background: #000000;
-    display: flex;
-    align-items: center; justify-content: center;
 }
 /* slide picture */
     .tab-in{
-    position: absolute;
     top: 35%;
     width: 100%;
     max-width: 1545px;
-    height: 70vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    input[name=radio-m]{
-    display: none;
-    }
-    .tab-in .slide{
-    left: 14%;
-    box-sizing: border-box;
-    position: absolute;
-    max-width: 1545px; 
-    height: 100%;
-    width: 100%;
-    /* border: solid 2px rgb(68, 68, 68); */
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    }
-    .tab-in .slide .slide-in{
-     
-        box-sizing: border-box;
-    display: flex;
-    max-width: 1545px;
-    width: 100%;
-    font-size: 0;
-    position: absolute;
-    align-items: center;
-    transition: 0.6s;
-    object-fit: contain;
-    }
-    .tab-in .slide .slide-in img{
-        height: 100%; width: 100%;
-        object-fit: contain;
-    }
-    .btn{
-    position: absolute;
-    bottom: 3%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    width: 1545px;
-
-    }
-    .btn label{
-    width: 13px; height: 13px;
-    display: inline-block;
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.612);
-    cursor: pointer;
-    transition: 1s;
-    z-index: 10000000;
     }
     .btn label:not(:last-child){
     margin-right: 30px;
     }
-    .btn label:hover{
-    background: rgba(255, 255, 255, 0.612);
-    }
-        
-    input[id=radio1]:checked ~ .slide .slide-in {
-    left: -13%;
-    }
-    input[id=radio2]:checked ~ .slide .slide-in {
-    left: -113%;
-    }
-    input[id=radio3]:checked ~ .slide .slide-in {
-    left: -213%;
-    }
-    input[id=radio4]:checked ~ .slide .slide-in {
-    left: -313%;
-    }
-    input[id=radio5]:checked ~ .slide .slide-in {
-    left: -413%;
-    }
-    input[id=radio6]:checked ~ .slide .slide-in {
-    left: -513%;
-    }
-    input[id=radio7]:checked ~ .slide .slide-in {
-            left: -613%;
-        }
-        input[id=radio1]:checked ~.btn label[for=radio1],
-        input[id=radio2]:checked ~.btn label[for=radio2],
-        input[id=radio3]:checked ~.btn label[for=radio3],
-        input[id=radio4]:checked ~.btn label[for=radio4],
-        input[id=radio5]:checked ~.btn label[for=radio5],
-        input[id=radio6]:checked ~.btn label[for=radio6],
-        input[id=radio7]:checked ~.btn label[for=radio7]{
-            background-color:gray;
-        }
-        .navigation-auto{
-            position: absolute;
-            display: flex;
-            width: 1545px;       
-            justify-content: center;
-            bottom: 3%;
-            display: none;
-        }
-        .navigation-auto div{
-            border: 2px solid rgba(255, 255, 255, 0.612);
-            padding: 5px;
-            border-radius: 10px;
-            transition: 1s; 
-        }
-        .navigation-auto div:not(:last-child){
-            margin-right: 30px;
-        }
-        #radio1:checked ~ .navigation-auto .auto-btn1{
-            background-color:gray;
-        }
-        #radio2:checked ~ .navigation-auto .auto-btn2{
-            background-color:gray;
-        }
-        #radio3:checked ~ .navigation-auto .auto-btn3{
-            background-color:gray;
-        }
-        #radio4:checked ~ .navigation-auto .auto-btn4{
-            background-color:gray;
-        }
-        #radio5:checked ~ .navigation-auto .auto-btn5{
-            background-color:gray;
-        }
-        #radio6:checked ~ .navigation-auto .auto-btn6{
-            background-color:gray;
-        }
-        #radio7:checked ~ .navigation-auto .auto-btn7{
-            background-color:gray;
-        }
 /* end slide picture */
 /* wrapper*/
     .wrapper2 {
     top: 13%;
-    position: absolute;
-    max-width: 1545px;
-    width: 100%;
-    height: 30%;
-    overflow: hidden;
     }
-
-    .marquee2 {
-    background-color: rgb(41, 41, 41);
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: marquee 200s linear infinite;
-    }
-
-    .marquee2 h1 {
-    font-size: 8em;
-    color: rgba(255, 255, 255, 0.851);
-    display: inline-block;
-    letter-spacing: 30px;
-    }
-
-    @keyframes marquee2 {
-    0% {
-    transform: translate3d(0, 0, 0);
-    }
-    100% {
-    transform: translate3d(-50%, 0, 0);
-    }
-    }
-
     .wrapper {
         top: 465vh;
     }
-    .marquee h1{
-        color: rgb(173, 173, 173);
-    }
 /* endwrapper*/
 /* about concept character section*/
-    .Aboutch-section{
-    border-top: solid 1px gray;
-    box-sizing: border-box;
-    top: 130vh;
-    margin-left: 25%;
-    width: 75%;
-    position: absolute;
-    padding-top: 1.5em;
+   .AAbout-section1{
+        z-index: 1;
+        top: 0;
+        margin-top: 130vh;
     }
     .Aboutch-section div{
     color: red;
@@ -201,83 +35,23 @@ body {
     justify-content: space-between;
     align-items: center;
     }
-    .aboutch{
-        color: white; 
-        float: left;
-    }
-    .contextch{
-        color:rgb(239, 239, 239);
-        padding-left: 30%; padding-right: 5%;
-        word-spacing: -0.3em;
-        letter-spacing: 0.07em;
-        line-height: 1.6em;
 
+    .contextch{
+     padding-right: 5%;
     }
 /* end concept character section*/
 /* about mesh & topology section */
     .about-ch-section{
-        border: solid 2px red;
     margin-top: 60vh;
     position: relative;
-    height: 100vh; width: 100%; 
-    background-color: #252525;
-    box-sizing: border-box;
-    display: flex;
-
-    }
-    .meshtopology-img{
-        border-right: solid 3px rgb(255, 255, 255);
-        background-color: white;
-        height: 100%; width: 50%; 
-        object-fit: contain;
-    }
-    .meshtopology-img img{
-        height: 100%; width: 90%;
-    }
-    .container-ch{
-        height: 100%; width: 50%;
-        display: flex;
-    }
-    .meshtopology-items{
-        border-left: solid 2px rgb(0, 0, 0);
-    }
-    .mesh{
-        margin-top: 7%;
-        padding: 10% 15% 0% 15%;
-        color: rgb(160, 160, 160);
-        word-spacing: -0.3em;
-        letter-spacing: 0.07em;
-    }
-    .mesh img{
-        float: left;
-    }
-    .title{
-        padding-top: 3%;
-        font-weight: 550;
-        color: rgb(235, 234, 234);
-        letter-spacing: 0.1em;
+    height: 100vh; width: 100%;
     }
     .about-ch-section2{
-        background-color:#252525;
-        position: absolute;
         top: 335vh;
-        height: 100vh; width: 100%;
-        box-sizing: border-box;
-        display: flex;
+        height: 100vh;
     }
     .meshtopology-img2{
-        background-color: #ffffff;
-        border-left: solid 5px rgb(255, 255, 255);
-        height: 100%; width: 50%;
-        object-fit: contain;
-        
-    }
-    .meshtopology-img2 img{
-        height: 100%; width: 90%;
-        float: right;
-        border-left: solid 8px rgb(255, 255, 255);
-        
-        
+        height: 100%; width: 50%;     
     }
     .mesh2{
         padding: 18% 15% 0% 15%;
@@ -285,64 +59,11 @@ body {
         word-spacing: -0.3em;
         letter-spacing: 0.07em;
     }
-    .mesh2 img{
-        float: left;
-    }
-    .iconz{
-        padding: 15% 15% 0% 17%;
-        
-    }
-    #boxm{
-        border-bottom: solid 2px rgb(255, 255, 255);
-        width: 100%;height: 100%;
-        display: inline-block;
-        top: 0; left: 0;
-    }
-    .container-ch2{
-        height: 100%; width: 50%;
-        display: flex;
-    }
     .section2bg{
-        background-image:linear-gradient(180deg, rgb(231, 231, 231),rgb(228, 228, 228));
         top: 190vh;
-        height: 305vh; width: 100%; max-width: 1545px;
-        position: absolute;
-    }
-    .mesh img, .mesh2 img{
-        -webkit-filter: brightness(0) invert(1);
-    filter: brightness(0) invert(1);
-    }
-    .section2bg div{
-        margin: 8% 5% 0%;
-        font-size: 3em;
-        font-weight: 900;
-        color: #292929;
-        word-spacing: -0.35em;
-        letter-spacing: 0.12em;
-    }
-    .section2bg p{
-        color: #383838;
-        
-        font-size: 1em;
-        margin-left: 5%;
-    }
-    .marquee span{
-        color: black;
+        height: 305vh;
     }
     .goback-box{
-         width: 100%;
-         position: absolute;
          top: 440vh; padding-left: 90%;
         }
-    .goback a{
-        color: rgb(0, 0, 0);   
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    .goback a:hover{
-        color:gray;
-        transform: translateY(1px);
-    }
-    
-
     }
