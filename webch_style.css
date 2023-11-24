@@ -1,5 +1,5 @@
-
 @media screen and (max-width:1920px) {
+    
 body {
     margin: 0 auto;
     min-height: 500vh;
@@ -20,7 +20,7 @@ body {
     top: 13%;
     }
     .wrapper {
-        top: 465vh;
+    top: 465vh;
     }
 /* endwrapper*/
 /* about concept character section*/
