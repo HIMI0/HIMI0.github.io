@@ -1,7 +1,6 @@
 @media screen and (max-width:1920px) {
     
 body {
-    margin: 0 auto;
     min-height: 500vh;
     max-width: 1545px;
 }
@@ -44,20 +43,12 @@ body {
     .about-ch-section{
     margin-top: 60vh;
     position: relative;
-    height: 100vh; width: 100%;
+    height: 100vh;
+    display: flex;
     }
     .about-ch-section2{
         top: 335vh;
         height: 100vh;
-    }
-    .meshtopology-img2{
-        height: 100%; width: 50%;     
-    }
-    .mesh2{
-        padding: 18% 15% 0% 15%;
-        color: rgb(160, 160, 160); 
-        word-spacing: -0.3em;
-        letter-spacing: 0.07em;
     }
     .section2bg{
         top: 190vh;
