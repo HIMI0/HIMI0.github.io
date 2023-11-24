@@ -16,8 +16,8 @@
         margin: 5% 0% 0% 25%;
     }
     #go-back{
-        position: absolute;
         margin: 20% 7% 10% 28%;
+        z-index:4;
     }
     .container_2{
         top: 0%;
