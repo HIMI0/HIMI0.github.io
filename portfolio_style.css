@@ -450,7 +450,7 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
 .wrapper {
     top: 280vh;
     position: absolute;
-    max-width: 100%;
+    width: 100%; max-width:1545px;
     overflow: hidden;
 }
 
