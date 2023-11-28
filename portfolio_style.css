@@ -24,9 +24,10 @@
 }
 body {
     margin: 0px auto;
-    background: #121212ef;
+    background: #212121;
     min-height: 310vh;
     max-width: 1545px;
+    
 }
 body:after{
     position: absolute;
@@ -47,7 +48,7 @@ body:after{
     background: rgba(12, 12, 12, 0.936);
     position: fixed;
     max-width: 1545px;
-    width: 99%; padding: 0% 0.5%; height: 70px;
+    width: 99%; padding: 0% 1%; height: 72px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -409,7 +410,7 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
 }
 #About-section{
     border-top: solid 1px gray;
-    margin-left: 25%;
+    margin-left: 30%;
     width: 100%;
 }
 .About-section div{
@@ -430,7 +431,7 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
 }
 #About-programused{
     position:absolute;
-    padding-left: 25%;
+    padding-left: 30%;
     width: 100%;
     margin-top: 30%;
 }
@@ -450,7 +451,7 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
 .wrapper {
     top: 280vh;
     position: absolute;
-    width: 100%; max-width:1545px;
+    width: 100%; max-width: 1545px;
     overflow: hidden;
 }
 
@@ -544,29 +545,59 @@ background:linear-gradient(rgb(57, 57, 57),rgb(30, 30, 30));
             width: 25%;
         }
      }
-    @media screen and (max-width:900px) {
+    @media screen and (max-width:700px) {
+        body{
+            height: 600vh;
+        }
+        .navbar{
+            height: 50px;
+        }
         .navbar ul li a{
-            font-size: 0.78em; margin: 0 15px;
+            font-size: 0.50em; margin: 0 15px;
+            display: none;
         }
-        .navbar ul li a:hover{
-            border-radius: 3px;
-            padding: 13px;
-            background-color: white;
-            color: black;
+        .navbar .logo{
+            padding-left: 0%;
         }
-        .card{
-            height: 100%; width: 60.4%;
+        .navbar span{
+            width: 90px;
         }
-        .container .card_items{
-            height: 100%; width: 100%;
-            column-gap: 0em;
-        }   
+        .navbar span img{
+            padding-right: 6px;
+        }
+        .cube{
+            zoom: 0.1em;
+        }
+        .emailtext{
+            right: 2%;
+        }
+        
     }
-    @media screen and (max-width:600px) {
-        .card{
-            height: 80%;
+    }
+    @media screen and (max-width:360px) {
+        body{
+            height: 600vh;
+        }
+        .navbar{
+            height: 50px; max-width: 360px;
+        }
+        .navbar ul li a{
+            font-size: 0.50em; margin: 0 15px;
+            display: none;
+        }
+        .navbar span{
+            width: 90px;
+        }
+        .navbar span img{
+            padding-right: 20px;
+        }
+        .cube{
+            zoom: 0.1em;
+        }
+        .emailtext{
+            position: absolute;
+            padding-right: 10%;
         }
         
     }
     
-    }
